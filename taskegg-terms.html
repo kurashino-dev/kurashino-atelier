@@ -45,6 +45,10 @@
       color: #C0B8B0;
     }
     a { color: #F5A623; text-decoration: none; }
+    #google_translate_element { text-align: center; margin-bottom: 8px; }
+    .goog-te-gadget { font-size: 12px !important; color: #8A7A6A !important; }
+    .goog-te-gadget .goog-te-combo { font-size: 13px; border-radius: 8px; border: 1px solid #E0D8D0; padding: 4px 8px; color: #4A3A2E; background: #FFF8F0; }
+    .translate-note { font-size: 11px; color: #C0B8B0; text-align: center; margin-bottom: 16px; }
   </style>
 </head>
 <body>
@@ -54,6 +58,9 @@
   <h1>利用規約</h1>
   <p>最終更新日：2026年6月21日</p>
 </header>
+
+<div id="google_translate_element"></div>
+<p class="translate-note">※ Google翻訳による自動翻訳です。原文（日本語）が正式な内容となります。</p>
 
 <section>
   <p>本利用規約（以下「本規約」）は、Kurashino（以下「当方」）が提供するアプリ「TaskEgg」（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用いただく前に、本規約をよくお読みいただき、同意の上でご利用ください。</p>
@@ -76,6 +83,7 @@
   <h2>3. 課金について</h2>
   <p>本アプリの課金・返金はすべてApple（App Store）が管理しています。課金・返金に関するお問い合わせは <a href="https://support.apple.com/ja-jp/billing" target="_blank">Appleサポート</a> へお願いします。</p>
   <p>お子様が誤って課金しないよう、保護者の方はスクリーンタイムや購入制限の設定をご利用ください。</p>
+  <p>本アプリのクラウド同期機能（複数端末でのデータ共有・機種変更時のデータ引き継ぎ）は月額サブスクリプションです。解約はAppleのサブスクリプション管理画面から行ってください。解約後は次の更新日まで有料機能をご利用いただけますが、それ以降はご利用いただけなくなります。返金はAppleの返金規約に従います。</p>
 </section>
 
 <section>
@@ -136,6 +144,18 @@
 <footer>
   <p>Copyright © 2026 Kurashino. All rights reserved.</p>
 </footer>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ja',
+      includedLanguages: 'en,zh-CN,zh-TW,ko,es,pt,fr,id,vi,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
