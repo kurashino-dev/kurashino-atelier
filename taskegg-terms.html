@@ -3,146 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>利用規約｜TaskEgg</title>
+  <title>利用規約 | TaskEgg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
-      background: #FFFDF9;
-      color: #2A1A0E;
-      line-height: 1.8;
-      padding: 24px 20px 60px;
-      max-width: 720px;
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
       margin: 0 auto;
+      padding: 80px 40px 120px;
     }
-    header { text-align: center; padding: 40px 0 32px; }
-    header .logo { font-size: 32px; margin-bottom: 8px; }
-    header h1 { font-size: 22px; font-weight: 800; color: #2A1A0E; }
-    header p { font-size: 13px; color: #8A7A6A; margin-top: 6px; }
-    section { margin-top: 32px; }
-    h2 {
-      font-size: 16px;
-      font-weight: 800;
-      color: #2A1A0E;
-      border-left: 4px solid #F5A623;
-      padding-left: 10px;
-      margin-bottom: 12px;
-    }
-    p { font-size: 14px; color: #4A3A2E; margin-bottom: 10px; }
-    ul { padding-left: 20px; margin-bottom: 10px; }
-    li { font-size: 14px; color: #4A3A2E; margin-bottom: 6px; }
-    .card {
-      background: #FFF8F0;
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin-bottom: 12px;
-    }
-    .card p { margin-bottom: 4px; }
-    footer {
-      margin-top: 48px;
-      text-align: center;
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
       font-size: 12px;
-      color: #C0B8B0;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
-    a { color: #F5A623; text-decoration: none; }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 60px;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+    }
+    ul {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .translate-note {
+      font-size: 11px;
+      color: var(--ink-muted);
+      text-align: center;
+      margin-bottom: 48px;
+    }
     #google_translate_element { text-align: center; margin-bottom: 8px; }
-    .goog-te-gadget { font-size: 12px !important; color: #8A7A6A !important; }
-    .goog-te-gadget .goog-te-combo { font-size: 13px; border-radius: 8px; border: 1px solid #E0D8D0; padding: 4px 8px; color: #4A3A2E; background: #FFF8F0; }
-    .translate-note { font-size: 11px; color: #C0B8B0; text-align: center; margin-bottom: 16px; }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: rgba(250,249,246,0.3);
+    }
+    @media (max-width: 768px) {
+      nav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">🥚</div>
+<nav>
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">Terms of Service — TaskEgg</p>
   <h1>利用規約</h1>
-  <p>最終更新日：2026年6月21日</p>
-</header>
+  <p class="updated">最終更新日：2026年6月21日</p>
 
-<div id="google_translate_element"></div>
-<p class="translate-note">※ Google翻訳による自動翻訳です。原文（日本語）が正式な内容となります。</p>
+  <div id="google_translate_element"></div>
+  <p class="translate-note">※ Google翻訳による自動翻訳です。原文（日本語）が正式な内容となります。</p>
 
-<section>
-  <p>本利用規約（以下「本規約」）は、Kurashino（以下「当方」）が提供するアプリ「TaskEgg」（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用いただく前に、本規約をよくお読みいただき、同意の上でご利用ください。</p>
-</section>
+  <div class="policy-section">
+    <p>本利用規約（以下「本規約」）は、Kurashino（以下「当方」）が提供するアプリ「TaskEgg」（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用いただく前に、本規約をよくお読みいただき、同意の上でご利用ください。</p>
+  </div>
 
-<section>
-  <h2>1. 対象ユーザー・保護者について</h2>
-  <p>本アプリはお子様（主に小学生）と保護者の方を対象としています。未成年のお子様が利用する場合は、保護者の方の同意と監督のもとでご利用ください。本アプリのアカウント登録は保護者の方が行ってください。</p>
-</section>
+  <div class="policy-section">
+    <h2>1. 対象ユーザー・保護者について</h2>
+    <p>本アプリはお子様（主に小学生）と保護者の方を対象としています。未成年のお子様が利用する場合は、保護者の方の同意と監督のもとでご利用ください。本アプリのアカウント登録は保護者の方が行ってください。</p>
+  </div>
 
-<section>
-  <h2>2. アカウント</h2>
-  <ul>
-    <li>アカウントの作成は任意です。作成しなくても基本機能をご利用いただけます。</li>
-    <li>アカウントはアプリ内の設定画面からいつでも削除できます。</li>
-  </ul>
-</section>
+  <div class="policy-section">
+    <h2>2. アカウント</h2>
+    <ul>
+      <li>アカウントの作成は任意です。作成しなくても基本機能をご利用いただけます。</li>
+      <li>アカウントはアプリ内の設定画面からいつでも削除できます。</li>
+    </ul>
+  </div>
 
-<section>
-  <h2>3. 課金について</h2>
-  <p>本アプリの課金・返金はすべてApple（App Store）が管理しています。課金・返金に関するお問い合わせは <a href="https://support.apple.com/ja-jp/billing" target="_blank">Appleサポート</a> へお願いします。</p>
-  <p>お子様が誤って課金しないよう、保護者の方はスクリーンタイムや購入制限の設定をご利用ください。</p>
-  <p>本アプリのクラウド同期機能（複数端末でのデータ共有・機種変更時のデータ引き継ぎ）は月額サブスクリプションです。解約はAppleのサブスクリプション管理画面から行ってください。解約後は次の更新日まで有料機能をご利用いただけますが、それ以降はご利用いただけなくなります。返金はAppleの返金規約に従います。</p>
-</section>
+  <div class="policy-section">
+    <h2>3. 課金について</h2>
+    <p>本アプリの課金・返金はすべてApple（App Store）が管理しています。課金・返金に関するお問い合わせは<a href="https://support.apple.com/ja-jp/billing" target="_blank">Appleサポート</a>へお願いします。</p>
+    <p>お子様が誤って課金しないよう、保護者の方はスクリーンタイムや購入制限の設定をご利用ください。</p>
+    <p>本アプリのクラウド同期機能（複数端末でのデータ共有・機種変更時のデータ引き継ぎ）は月額サブスクリプションです。解約はAppleのサブスクリプション管理画面から行ってください。解約後は次の更新日まで有料機能をご利用いただけますが、それ以降はご利用いただけなくなります。返金はAppleの返金規約に従います。</p>
+  </div>
 
-<section>
-  <h2>4. データの取り扱いと免責</h2>
-  <p>本アプリのデータはお使いの端末、およびアカウント作成時はサーバー（Google Firebase）に保存されます。</p>
-  <p>当方の故意または重過失による場合を除き、以下の状況においてデータが消失・同期されない場合であっても、当方は責任を負いません。</p>
-  <ul>
-    <li>アプリのアンインストール（アカウントなしの場合）</li>
-    <li>端末の初期化・機種変更（アカウントなしの場合）</li>
-    <li>Firebaseなどのサーバー障害</li>
-    <li>アカウントを削除した場合</li>
-    <li>インターネット接続がない環境での利用</li>
-    <li>複数端末で同時にアプリを操作した場合</li>
-    <li>OSのバージョンアップによる動作不良</li>
-    <li>端末の機種・スペックによる表示の差異</li>
-  </ul>
-</section>
+  <div class="policy-section">
+    <h2>4. データの取り扱いと免責</h2>
+    <p>本アプリのデータはお使いの端末、およびアカウント作成時はサーバー（Google Firebase）に保存されます。</p>
+    <p>当方の故意または重過失による場合を除き、以下の状況においてデータが消失・同期されない場合であっても、当方は責任を負いません。</p>
+    <ul>
+      <li>アプリのアンインストール（アカウントなしの場合）</li>
+      <li>端末の初期化・機種変更（アカウントなしの場合）</li>
+      <li>Firebaseなどのサーバー障害</li>
+      <li>アカウントを削除した場合</li>
+      <li>インターネット接続がない環境での利用</li>
+      <li>複数端末で同時にアプリを操作した場合</li>
+      <li>OSのバージョンアップによる動作不良</li>
+      <li>端末の機種・スペックによる表示の差異</li>
+    </ul>
+  </div>
 
-<section>
-  <h2>5. 禁止事項</h2>
-  <ul>
-    <li>本アプリの不正利用・改ざん・リバースエンジニアリング</li>
-    <li>法令または公序良俗に反する行為</li>
-  </ul>
-</section>
+  <div class="policy-section">
+    <h2>5. 禁止事項</h2>
+    <ul>
+      <li>本アプリの不正利用・改ざん・リバースエンジニアリング</li>
+      <li>法令または公序良俗に反する行為</li>
+    </ul>
+  </div>
 
-<section>
-  <h2>6. 知的財産権</h2>
-  <p>本アプリに含まれるすべてのコンテンツ（テキスト・画像・キャラクター・デザイン等）の著作権はKurashinoに帰属します。無断での複製・転載・改変・配布を禁じます。</p>
-</section>
+  <div class="policy-section">
+    <h2>6. 知的財産権</h2>
+    <p>本アプリに含まれるすべてのコンテンツ（テキスト・画像・キャラクター・デザイン等）の著作権はKurashinoに帰属します。無断での複製・転載・改変・配布を禁じます。</p>
+  </div>
 
-<section>
-  <h2>7. サービスの変更・終了</h2>
-  <p>当方は、合理的な期間をもって告知するよう努めた上で、本アプリの内容を変更、または提供を終了することがあります。ただし、やむを得ない事情がある場合は予告なく変更・終了する場合があります。</p>
-</section>
+  <div class="policy-section">
+    <h2>7. サービスの変更・終了</h2>
+    <p>当方は、合理的な期間をもって告知するよう努めた上で、本アプリの内容を変更、または提供を終了することがあります。ただし、やむを得ない事情がある場合は予告なく変更・終了する場合があります。</p>
+  </div>
 
-<section>
-  <h2>8. 規約の変更</h2>
-  <p>本規約は必要に応じて更新することがあります。最新の規約は常に本ページに掲載されます。重要な変更がある場合は、アプリ内またはウェブサイト上でお知らせします。</p>
-</section>
+  <div class="policy-section">
+    <h2>8. 規約の変更</h2>
+    <p>本規約は必要に応じて更新することがあります。最新の規約は常に本ページに掲載されます。重要な変更がある場合は、アプリ内またはウェブサイト上でお知らせします。</p>
+  </div>
 
-<section>
-  <h2>9. 準拠法・管轄裁判所</h2>
-  <p>本規約は日本法に準拠します。本アプリに関連して生じた紛争については、大阪地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
-</section>
+  <div class="policy-section">
+    <h2>9. 準拠法・管轄裁判所</h2>
+    <p>本規約は日本法に準拠します。本アプリに関連して生じた紛争については、大阪地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+  </div>
 
-<section>
-  <h2>10. お問い合わせ</h2>
-  <div class="card">
+  <div class="policy-section">
+    <h2>10. お問い合わせ</h2>
     <p><a href="https://forms.gle/CgxzyoQUAcjeFDoy6" target="_blank">お問い合わせフォーム</a></p>
   </div>
-</section>
-
-<div style="text-align:center;margin:40px 0 24px">
-  <a href="https://kurashino-atelier.com" style="display:inline-block;padding:12px 28px;background:#F5A623;color:#fff;border-radius:99px;font-size:14px;font-weight:700;text-decoration:none">← ホームに戻る</a>
-</div>
+</main>
 
 <footer>
-  <p>Copyright © 2026 Kurashino. All rights reserved.</p>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">© 2026 Kurashino. All rights reserved.</p>
 </footer>
 
 <script type="text/javascript">
