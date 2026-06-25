@@ -3,138 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー｜TaskEgg</title>
+  <title>プライバシーポリシー | TaskEgg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
-      background: #FFFDF9;
-      color: #2A1A0E;
-      line-height: 1.8;
-      padding: 24px 20px 60px;
-      max-width: 720px;
-      margin: 0 auto;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
     }
-    header { text-align: center; padding: 40px 0 32px; }
-    header .logo { font-size: 32px; margin-bottom: 8px; }
-    header h1 { font-size: 22px; font-weight: 800; color: #2A1A0E; }
-    header p { font-size: 13px; color: #8A7A6A; margin-top: 6px; }
-    section { margin-top: 32px; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 60px;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; }
     h2 {
-      font-size: 16px;
-      font-weight: 800;
-      color: #2A1A0E;
-      border-left: 4px solid #F5A623;
-      padding-left: 10px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+    }
+    ul {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
       margin-bottom: 12px;
     }
-    p { font-size: 14px; color: #4A3A2E; margin-bottom: 10px; }
-    ul { padding-left: 20px; margin-bottom: 10px; }
-    li { font-size: 14px; color: #4A3A2E; margin-bottom: 6px; }
-    .card {
-      background: #FFF8F0;
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin-bottom: 10px;
-    }
-    footer {
-      margin-top: 48px;
+    .card p { margin-bottom: 8px; }
+    .translate-note {
+      font-size: 11px;
+      color: var(--ink-muted);
       text-align: center;
-      font-size: 12px;
-      color: #C0B8B0;
+      margin-bottom: 48px;
     }
-    a { color: #F5A623; text-decoration: none; }
     #google_translate_element { text-align: center; margin-bottom: 8px; }
-    .goog-te-gadget { font-size: 12px !important; color: #8A7A6A !important; }
-    .goog-te-gadget .goog-te-combo { font-size: 13px; border-radius: 8px; border: 1px solid #E0D8D0; padding: 4px 8px; color: #4A3A2E; background: #FFF8F0; }
-    .translate-note { font-size: 11px; color: #C0B8B0; text-align: center; margin-bottom: 16px; }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: rgba(250,249,246,0.3);
+    }
+    @media (max-width: 768px) {
+      nav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">🥚</div>
+<nav>
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">Privacy Policy — TaskEgg</p>
   <h1>プライバシーポリシー</h1>
-  <p>最終更新日：2026年6月21日</p>
-</header>
+  <p class="updated">最終更新日：2026年6月21日</p>
 
-<div id="google_translate_element"></div>
-<p class="translate-note">※ Google翻訳による自動翻訳です。原文（日本語）が正式な内容となります。</p>
+  <div id="google_translate_element"></div>
+  <p class="translate-note">※ Google翻訳による自動翻訳です。原文（日本語）が正式な内容となります。</p>
 
-<section>
-  <p>Kurashino（以下「当方」）は、TaskEgg（以下「本アプリ」）におけるユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
-</section>
-
-<section>
-  <h2>1. 収集する情報</h2>
-  <div class="card">
-    <p><strong>アカウント情報（クラウド同期ご利用者のみ）</strong></p>
-    <ul>
-      <li>メールアドレス</li>
-      <li>パスワード（暗号化して保存）</li>
-    </ul>
-    <p>クラウド同期機能をご利用の場合のみ、アカウントを作成します。ご利用でない場合、これらの情報は一切収集されません。</p>
+  <div class="policy-section">
+    <p>Kurashino（以下「当方」）は、TaskEgg（以下「本アプリ」）におけるユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、本アプリが収集する情報とその利用方法について説明します。</p>
   </div>
-  <div class="card">
-    <p><strong>アプリ利用データ</strong></p>
-    <ul>
-      <li>タスクの内容・達成状況</li>
-      <li>コイン・キャラクターなどのゲームデータ</li>
-      <li>アプリの設定情報</li>
-    </ul>
-    <p>アカウントを作成した場合、上記データをサーバーに保存します。アカウントなしの場合はお使いの端末内にのみ保存されます。</p>
+
+  <div class="policy-section">
+    <h2>1. 収集する情報</h2>
+    <div class="card">
+      <h3>アカウント情報（クラウド同期ご利用者のみ）</h3>
+      <ul>
+        <li>メールアドレス</li>
+        <li>パスワード（暗号化して保存）</li>
+      </ul>
+      <p>クラウド同期機能をご利用の場合のみ、アカウントを作成します。ご利用でない場合、これらの情報は一切収集されません。</p>
+    </div>
+    <div class="card">
+      <h3>アプリ利用データ</h3>
+      <ul>
+        <li>タスクの内容・達成状況</li>
+        <li>コイン・キャラクターなどのゲームデータ</li>
+        <li>アプリの設定情報</li>
+      </ul>
+      <p>アカウントを作成した場合、上記データをサーバーに保存します。アカウントなしの場合はお使いの端末内にのみ保存されます。</p>
+    </div>
   </div>
-</section>
 
-<section>
-  <h2>2. 情報の利用目的</h2>
-  <ul>
-    <li>アプリの機能提供（タスク管理・ご褒美機能）</li>
-    <li>データのバックアップおよび端末間同期</li>
-    <li>アプリの改善・不具合対応</li>
-  </ul>
-  <p>収集した情報を広告・マーケティングに使用することはありません。</p>
-</section>
+  <div class="policy-section">
+    <h2>2. 情報の利用目的</h2>
+    <ul>
+      <li>アプリの機能提供（タスク管理・ご褒美機能）</li>
+      <li>データのバックアップおよび端末間同期</li>
+      <li>アプリの改善・不具合対応</li>
+    </ul>
+    <p>収集した情報を広告・マーケティングに使用することはありません。</p>
+  </div>
 
-<section>
-  <h2>3. 情報の第三者提供</h2>
-  <p>当方は、法令に基づく場合を除き、ユーザーの個人情報を第三者に提供しません。</p>
-</section>
+  <div class="policy-section">
+    <h2>3. 情報の第三者提供</h2>
+    <p>当方は、法令に基づく場合を除き、ユーザーの個人情報を第三者に提供しません。</p>
+  </div>
 
-<section>
-  <h2>4. 利用するサービスおよびデータの国外移転</h2>
-  <p>本アプリはデータの保存・認証のためにGoogle Firebase（Firebase Authentication、Cloud Firestore）を利用しています。Firebaseのプライバシーポリシーについては <a href="https://firebase.google.com/support/privacy" target="_blank">こちら</a> をご確認ください。</p>
-  <p>なお、Firebaseの利用に伴い、データが日本国外のサーバーで処理・保存される場合があります。</p>
-</section>
+  <div class="policy-section">
+    <h2>4. 利用するサービスおよびデータの国外移転</h2>
+    <p>本アプリはデータの保存・認証のためにGoogle Firebase（Firebase Authentication、Cloud Firestore）を利用しています。Firebaseのプライバシーポリシーについては<a href="https://firebase.google.com/support/privacy" target="_blank">こちら</a>をご確認ください。</p>
+    <p>なお、Firebaseの利用に伴い、データが日本国外のサーバーで処理・保存される場合があります。</p>
+  </div>
 
-<section>
-  <h2>5. お子様のプライバシー</h2>
-  <p>本アプリのアカウント登録は保護者の方が行ってください。当方は、保護者の同意なくお子様から個人情報を意図的に収集することはありません。</p>
-</section>
+  <div class="policy-section">
+    <h2>5. お子様のプライバシー</h2>
+    <p>本アプリのアカウント登録は保護者の方が行ってください。当方は、保護者の同意なくお子様から個人情報を意図的に収集することはありません。</p>
+  </div>
 
-<section>
-  <h2>6. データの削除</h2>
-  <p>アプリ内の設定画面からアカウントを削除することで、サーバー上のすべてのデータを削除できます。</p>
-</section>
+  <div class="policy-section">
+    <h2>6. データの削除</h2>
+    <p>アプリ内の設定画面からアカウントを削除することで、サーバー上のすべてのデータを削除できます。</p>
+  </div>
 
-<section>
-  <h2>7. ポリシーの変更</h2>
-  <p>本ポリシーは必要に応じて更新することがあります。最新のポリシーは常に本ページに掲載されます。</p>
-</section>
+  <div class="policy-section">
+    <h2>7. ポリシーの変更</h2>
+    <p>本ポリシーは必要に応じて更新することがあります。最新のポリシーは常に本ページに掲載されます。</p>
+  </div>
 
-<section>
-  <h2>8. お問い合わせ</h2>
-  <div class="card">
+  <div class="policy-section">
+    <h2>8. お問い合わせ</h2>
     <p><a href="https://forms.gle/CgxzyoQUAcjeFDoy6" target="_blank">お問い合わせフォーム</a></p>
   </div>
-</section>
-
-<div style="text-align:center;margin:40px 0 24px">
-  <a href="https://kurashino-atelier.com" style="display:inline-block;padding:12px 28px;background:#F5A623;color:#fff;border-radius:99px;font-size:14px;font-weight:700;text-decoration:none">← ホームに戻る</a>
-</div>
+</main>
 
 <footer>
-  <p>Copyright © 2026 Kurashino. All rights reserved.</p>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">© 2026 Kurashino. All rights reserved.</p>
 </footer>
 
 <script type="text/javascript">
