@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | TaskEgg</title>
+  <link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/taskegg-terms.html">
+  <link rel="alternate" hreflang="en" href="https://kurashino-atelier.com/taskegg-terms-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/taskegg-terms-en.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-note { font-size: 12px; color: var(--ink-muted); text-align: center; margin: 0 0 22px; line-height: 1.7; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 60px;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+    }
+    ul {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .translate-note {
+      font-size: 11px;
+      color: var(--ink-muted);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    #google_translate_element { text-align: center; margin-bottom: 8px; }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: rgba(250,249,246,0.3);
+    }
+    @media (max-width: 768px) {
+      nav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">Terms of Service — TaskEgg</p>
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: September 4, 2026</p>
+  <nav class="lang-switch" aria-label="Language and document">
+    <a href="https://kurashino-atelier.com/taskegg-terms.html" hreflang="ja" lang="ja">日本語</a>
+    <span class="sep">|</span>
+    <span class="lang-current">English</span>
+    <span class="sep">·</span>
+    <a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a>
+  </nav>
+  <p class="lang-note">An official Japanese version of this document is also available. The Japanese version is the authoritative text; if there is any difference between the two, the Japanese version applies.</p>
+
+  <div id="google_translate_element"></div>
+  <p class="translate-note">Official versions of this document are available in Japanese and English. Any other language shown below is a machine translation by Google Translate, provided only as a reading aid.</p>
+
+
+  <div class="policy-section">
+    <p>These Terms of Service (the "Terms") set out the conditions for using the app "TaskEgg" (the "App") provided by Kurashino ("we", "us"). By using the App, you agree to these Terms.</p>
+    <p>The handling of personal information and user data in the App is governed by our separate <a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a>. Where you use the App or its paid features through the Apple App Store or Google Play, the terms and policies of those platforms also apply. Where these Terms conflict with applicable law or with a platform's mandatory requirements, those take precedence.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>1. Users and Guardians</h2>
+    <p>The App includes features that help guardians and others support children in building habits. Where a minor uses the App, please do so with the consent and supervision of a guardian or another appropriately authorized adult.</p>
+    <p>Purchases and other important settings are intended to be managed by a guardian or another appropriately authorized adult.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>2. Basic Features and Accounts</h2>
+    <p>The App can be used without creating an account. Creating an account and registering an email address are not required.</p>
+    <p>At present, the App does not provide cloud sync or sharing features. Data such as tasks and records is stored on your device.</p>
+    <p>For details on where data is stored and how it is handled, please see the <a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a>.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>3. Paid Features and Purchases</h2>
+    <p>The App offers additional features and content as a one-time purchase (shown in the App as "Premium"). At present, we do not offer auto-renewing subscriptions.</p>
+    <p>For the price, the features available, and the conditions of any discounts, please check what is shown in the App or on the screen of the platform where you purchase at the time of purchase.</p>
+    <p>The App may provide a period after first use during which the features covered by the one-time purchase can be used free of charge. This is provided by the App itself and differs from a free trial offered by the platform where you purchase. The period and other conditions are shown within the App.</p>
+    <p>A one-time purchase is a purchase method that does not involve auto-renewal for the features and content shown at the time of purchase. No recurring charges occur.</p>
+    <p>If you are signed in with the same platform account used at the time of purchase (such as your Apple Account), a one-time purchase can be restored after changing devices or reinstalling, using "Restore Purchases" within the App.</p>
+    <p>Payments are processed through the platform where you made the purchase (Apple App Store or Google Play). We do not obtain or store payment details themselves, such as credit card numbers.</p>
+    <p>On a device used by a minor, please have a guardian set purchase approval and purchase restrictions appropriately on each platform.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>4. Refunds and Purchase Inquiries</h2>
+    <p>Because purchases in the App do not involve auto-renewal, no cancellation procedure is required.</p>
+    <p>Whether a refund is available for a purchase, and the refund procedure, are governed by the terms and policies of the platform where you made the purchase and by applicable law.</p>
+    <p>If something about a purchase or refund needs to be checked on the App side, you may contact us. However, depending on the nature of the procedure, action or an inquiry on the platform where you made the purchase may be required.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>5. Future Online Features</h2>
+    <p>We may add data sync or other online features to the App in the future. At present, the timing, content, external services to be used, and whether any charges will apply have not been determined.</p>
+    <p>If we offer such features, we will inform you of the applicable conditions (including the features covered, whether account registration is required, and, where charges apply, their content) through these Terms, within the App, or by another method we separately establish. As to the handling of data, we will update the <a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a> before making such features available.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>6. Handling of Data</h2>
+    <p>For where user data is stored, the use of external services, retention periods, deletion methods, and other aspects of how data is handled, please see the <a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a>.</p>
+    <p>Data such as tasks and records is stored on your device. Accordingly, data on the device may be lost through deletion of the App, resetting the device, device failure, or other circumstances. For important information, please also check and manage it yourself as needed.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>7. Prohibited Conduct</h2>
+    <p>In using the App, you must not engage in any of the following.</p>
+    <ul>
+      <li>Conduct that violates law or public order and morals</li>
+      <li>Conduct that infringes the rights, interests, privacy, or similar of us or of a third party</li>
+      <li>Unauthorized access, impersonation, misuse of authentication credentials, or other conduct that harms security</li>
+      <li>Conduct that interferes with the proper operation of the App, its servers, or networks</li>
+      <li>Improper use of purchase, refund, or other mechanisms</li>
+      <li>Except where permitted by law, improperly modifying, analysing, or reverse engineering the App</li>
+      <li>Other conduct that we reasonably judge to be inappropriate for the proper operation of the App</li>
+    </ul>
+    <p>If you breach these Terms, we may take necessary and appropriate measures, such as restricting the use of features, according to the nature and degree of the breach.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>8. Intellectual Property and Third-Party Licences</h2>
+    <p>Copyright, trademark rights, and other intellectual property rights in the text, images, characters, designs, programs, and other content included in the App belong to us or to the third parties holding the relevant rights.</p>
+    <p>Except where permitted by law, you may not reproduce, republish, modify, distribute, or otherwise use these without the rights holder's permission.</p>
+    <p>Open source software and other third-party works used by the App are subject to their respective licence terms. The applicable licence information can be viewed from the third-party licence notice within the App.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>9. Changes to, Suspension of, and Termination of the App</h2>
+    <p>We may change, add to, suspend, or terminate the App or part of its features for reasonable reasons, such as improvement, maintenance, security response, changes to legal or platform requirements, or changes to external services.</p>
+    <p>For changes with a significant effect on users, or for termination of the service, except in urgent or otherwise unavoidable circumstances, we will endeavour to give notice within the App, on this website, or by another appropriate method, allowing a reasonable period.</p>
+    <p>Where paid features are affected, the treatment is governed by the terms and policies of the platform where you made the purchase and by applicable law. The handling of user data upon termination of the service is set out in the <a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a>.</p>
+    <p>A one-time purchase means a purchase method that does not involve auto-renewal; it does not guarantee that the App or the features covered will be provided permanently.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>10. Notes and Responsibility Regarding Use of the App</h2>
+    <p>We endeavour to improve the App continuously, but we do not guarantee that the App will always be available without interruption, that it will work fully on every device and operating system, or that no defects will occur.</p>
+    <p>All or part of the App may temporarily become unavailable, or the reflection of data may be delayed, due to device failure or loss, changes to the operating system or device specifications, communication failures, failures or specification changes of external services such as Apple or Google, or other circumstances beyond our reasonable control.</p>
+    <p>Nothing in these Terms limits or excludes any of our liability that cannot be limited or excluded under the Consumer Contract Act or other applicable law. Our liability is governed by applicable law.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>11. Changes to These Terms</h2>
+    <p>In accordance with law, we may change these Terms where the change conforms to the general interests of users, or where the change is not contrary to the purpose of using the App and the necessity and content of the change are reasonable.</p>
+    <p>Where we make a significant change, we will give advance notice of the content of the change and its effective date on this page, within the App, or by another appropriate method. The revised Terms apply from the effective date shown.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>12. Governing Law</h2>
+    <p>These Terms and the use of the App are governed by the laws of Japan. Any dispute arising between us and a user in connection with the App shall be resolved by a court having jurisdiction under applicable law.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>13. Contact</h2>
+    <p>For inquiries about these Terms, the App, paid features, accounts, or other matters, please contact us using the <a href="https://forms.gle/CgxzyoQUAcjeFDoy6" target="_blank" rel="noopener noreferrer">inquiry form</a>.</p>
+    <p>Business name: Kurashino</p>
+    <p>App name: TaskEgg</p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">© 2026 Kurashino. All rights reserved.</p>
+</footer>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'zh-CN,zh-TW,ko,es,pt,fr,id,vi,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

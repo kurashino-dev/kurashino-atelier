@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | TaskEgg</title>
+  <link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/taskegg-privacy.html">
+  <link rel="alternate" hreflang="en" href="https://kurashino-atelier.com/taskegg-privacy-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/taskegg-privacy-en.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-note { font-size: 12px; color: var(--ink-muted); text-align: center; margin: 0 0 22px; line-height: 1.7; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 60px;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+    }
+    ul {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .translate-note {
+      font-size: 11px;
+      color: var(--ink-muted);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    #google_translate_element { text-align: center; margin-bottom: 8px; }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: rgba(250,249,246,0.3);
+    }
+    @media (max-width: 768px) {
+      nav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">Privacy Policy — TaskEgg</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 4, 2026</p>
+  <nav class="lang-switch" aria-label="Language and document">
+    <a href="https://kurashino-atelier.com/taskegg-privacy.html" hreflang="ja" lang="ja">日本語</a>
+    <span class="sep">|</span>
+    <span class="lang-current">English</span>
+    <span class="sep">·</span>
+    <a href="https://kurashino-atelier.com/taskegg-terms-en.html">Terms of Service</a>
+  </nav>
+  <p class="lang-note">An official Japanese version of this document is also available. The Japanese version is the authoritative text; if there is any difference between the two, the Japanese version applies.</p>
+
+  <div id="google_translate_element"></div>
+  <p class="translate-note">Official versions of this document are available in Japanese and English. Any other language shown below is a machine translation by Google Translate, provided only as a reading aid.</p>
+
+
+  <div class="policy-section">
+    <p>Kurashino ("we", "us") respects the privacy of users of TaskEgg (the "App") and works to protect personal information and user data appropriately. This Policy explains the information the App handles, the purposes for which it is used, the use of external services, how long data is retained, and how it can be deleted.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>1. Information the App Handles</h2>
+    <p>At present, the App does not transmit or store information you enter or create on our servers. We do not offer account creation, cloud sync, or sharing features. The data the App handles is stored on your device.</p>
+    <p>Where this Policy says data is "stored on your device", this refers to where information you enter or create in the App (hereafter "User Content") is kept. The use of external services is described in §3.</p>
+
+    <div class="card">
+      <h3>Account Registration</h3>
+      <p>You do not need to create an account or register an email address to use the App. We do not collect your email address, name, address, telephone number, or other contact information.</p>
+    </div>
+
+    <div class="card">
+      <h3>Information You Enter or Create in the App</h3>
+      <p>To provide the App's features, we handle the following information that you enter or create. This information is stored only on your device.</p>
+      <ul>
+        <li>A child's name or nickname, profile, and other settings</li>
+        <li>Names such as savings goal names and character nicknames</li>
+        <li>Tasks, schedules, completion status, and similar information</li>
+        <li>In-app data such as coins, characters, and rewards</li>
+        <li>Information used to create records and reviews</li>
+        <li>Other information you enter in order to use the App's features</li>
+      </ul>
+      <p>This information is not transmitted from your device to us or to any third party.</p>
+    </div>
+
+    <div class="card">
+      <h3>Guardian PIN</h3>
+      <p>The guardian PIN, which is set in order to confirm guardian-level actions, is stored only on the device where it was set. The guardian PIN is not transmitted outside the device.</p>
+    </div>
+
+    <div class="card">
+      <h3>Purchase Information</h3>
+      <p>The App offers a one-time purchase of additional features (shown in the App as "Premium"). We do not offer auto-renewing subscriptions.</p>
+      <p>If you make a purchase, the App checks and retains on your device the purchase status returned by the platform where you purchased (Apple App Store or Google Play), in order to provide the purchased features. We do not transmit or store purchase information on our servers.</p>
+      <p>We do not collect or store payment details themselves, such as credit card numbers. Payments are processed through the platform where you made the purchase (Apple App Store or Google Play).</p>
+    </div>
+  </div>
+
+  <div class="policy-section">
+    <h2>2. Purposes of Use</h2>
+    <p>We use the information the App handles for the following purposes.</p>
+    <ul>
+      <li>To provide the App's features</li>
+      <li>To store tasks, schedules, rewards, records, and similar data on your device</li>
+      <li>To check the status of purchased features</li>
+      <li>To respond to your inquiries</li>
+    </ul>
+    <p>We do not use information obtained through the App to deliver third-party advertising, to build profiles for advertising purposes, or to track users. The App does not use the advertising identifier (IDFA) and does not request tracking permission through App Tracking Transparency (ATT). The App also does not include any software development kit (SDK) that performs usage analytics or sends crash reports.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>3. Use of External Services</h2>
+    <p>At present, the App does not transmit information you enter or create to any external service. We do not entrust the processing of user data to any third party.</p>
+    <p>To confirm the content of purchases, we use the purchase information and verification mechanisms provided by the platform where you made the purchase (Apple App Store or Google Play). This confirmation takes place on your device.</p>
+    <p>If in the future we entrust the processing of user data to an external service, we will first confirm that service's contractual terms, privacy protections, and security measures, and confirm that user data will be protected at a level equal to or higher than that required by this Policy and by applicable platform requirements. If we begin such an arrangement, we will state the service provider and the information handled in this Policy before doing so.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>4. Provision to Third Parties</h2>
+    <p>We do not sell or provide users' personal information to third parties, except in the following cases.</p>
+    <ul>
+      <li>Where the user has given consent</li>
+      <li>Where we entrust data processing to a service provider to the extent necessary to provide the App</li>
+      <li>Where disclosure is required by law</li>
+      <li>Where necessary to protect a person's life, body, or property</li>
+      <li>Where necessary to respond to misuse, security issues, or similar matters</li>
+    </ul>
+    <p>At present, we do not provide user information to any third party, nor do we entrust data processing to any third party.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>5. Processing of Data Outside Japan</h2>
+    <p>At present, the information the App handles is stored on your device, and we do not transfer user data outside Japan.</p>
+    <p>If we offer a feature under which processing or storage takes place on facilities outside Japan, we will state this in this Policy before making that feature available.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>6. Children's Privacy</h2>
+    <p>The App includes features that help children build habits. Purchases and similar settings are intended to be managed by a guardian or another appropriately authorized adult.</p>
+    <p>We do not intend to knowingly collect personal information such as contact details directly from a child without the awareness or consent of a guardian. Where a child's name or nickname is entered in the App, it should be entered under the responsibility of a guardian or another appropriately authorized person. Such information is stored only on your device and is not collected by us.</p>
+    <p>In consideration of the privacy of users including children, we do not use information obtained through the App for third-party advertising, its personalization, or user tracking.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>7. Data Retention</h2>
+    <p>The information the App handles is stored on your device and is retained until you delete it, or until the App is removed from the device. No user data is stored on our servers.</p>
+    <p>Data stored on your device can be deleted using the deletion features within the App, or by deleting the App.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>8. Deleting Data</h2>
+    <p>Because the data the App handles is stored only on your device, you can delete it yourself. No deletion request to us is required.</p>
+    <ul>
+      <li>Individual data (tasks, schedules, records, rewards, and so on) can be deleted using the deletion features within the App</li>
+      <li>To delete all of the App's data, including the guardian PIN, delete the App from your device</li>
+    </ul>
+    <p>Because we do not offer accounts, there is no account deletion procedure. If you have questions about how data is handled, please contact us using the inquiry form on this page.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>9. Future Online Features</h2>
+    <p>We may add data sync or other online features to the App in the future. At present, the timing, content, external services to be used, and data storage method for such features have not been determined.</p>
+    <p>If we offer such features, we will update this Privacy Policy before making them available, stating the information handled, the purposes of use, the service providers entrusted with processing, where and for how long data is stored, and how it can be deleted. We will announce such updates on this page or by an appropriate method within the App.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>10. Data if the Service Ends</h2>
+    <p>We may end the provision of all or part of the App for reasons on our side.</p>
+    <p>If we end the service, except in urgent or otherwise unavoidable circumstances, we will endeavour to give notice about the handling of data on this page, within the App, or by another appropriate method, allowing a reasonable period.</p>
+    <p>Data stored only on your device is not automatically deleted even if the App is discontinued. If you no longer need it, please delete it on your device.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>11. Security</h2>
+    <p>We endeavour to take reasonable safety management measures to prevent unauthorized access to, leakage of, alteration of, or loss of user data.</p>
+    <p>Because the data the App handles is stored on your device, its protection also depends on your device passcode, biometric authentication, and other protections provided by the operating system. Please take care in managing your device.</p>
+    <p>Where the App communicates over a network, encrypted communication is used.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>12. Changes to This Privacy Policy</h2>
+    <p>We may change this Privacy Policy in line with changes to the App's features, the services we use, applicable law, or platform policies. If there is a significant change, we will notify you on this page or by an appropriate method within the App. The most recent Privacy Policy is always published on this page.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>13. Contact</h2>
+    <p>For inquiries about this Privacy Policy, about how data is handled in the App, or about deleting data, please contact us using the <a href="https://forms.gle/CgxzyoQUAcjeFDoy6" target="_blank" rel="noopener noreferrer">inquiry form</a>.</p>
+    <p>We also accept consultations and requests regarding disclosure, correction, suspension of use, and similar matters concerning personal data we hold through the same inquiry form. Depending on the nature of the request, we may ask you to verify your identity, and we will respond in accordance with applicable law and the required procedures.</p>
+    <p>Business name: Kurashino</p>
+    <p>App name: TaskEgg</p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">© 2026 Kurashino. All rights reserved.</p>
+</footer>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'zh-CN,zh-TW,ko,es,pt,fr,id,vi,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

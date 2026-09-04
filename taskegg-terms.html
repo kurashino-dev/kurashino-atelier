@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>利用規約 | TaskEgg</title>
+  <link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/taskegg-terms.html">
+  <link rel="alternate" hreflang="en" href="https://kurashino-atelier.com/taskegg-terms-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/taskegg-terms-en.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
@@ -59,6 +62,15 @@
       margin: 0 auto;
       padding: 80px 40px 120px;
     }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-note { font-size: 12px; color: var(--ink-muted); text-align: center; margin: 0 0 22px; line-height: 1.7; }
     .page-label {
       font-family: 'Cormorant Garamond', serif;
       font-size: 12px;
@@ -175,6 +187,14 @@
   <p class="page-label">Terms of Service — TaskEgg</p>
   <h1>利用規約</h1>
   <p class="updated">最終更新日：2026年9月4日</p>
+  <nav class="lang-switch" aria-label="言語と文書の切り替え">
+    <span class="lang-current">日本語</span>
+    <span class="sep">|</span>
+    <a href="https://kurashino-atelier.com/taskegg-terms-en.html" hreflang="en" lang="en">English</a>
+    <span class="sep">·</span>
+    <a href="https://kurashino-atelier.com/taskegg-privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p class="lang-note">英語版もご用意しています。日本語版と英語版で内容に相違がある場合は、日本語版が正本となります。</p>
 
   <div id="google_translate_element"></div>
   <p class="translate-note">※ Google翻訳による自動翻訳です。原文（日本語）が正式な内容となります。</p>
@@ -272,8 +292,8 @@
   </div>
 
   <div class="policy-section">
-    <h2>12. 準拠法・管轄裁判所</h2>
-    <p>本規約および本アプリの利用には日本法を適用します。本アプリに関連して当方とユーザーとの間に紛争が生じた場合は、法令に別段の定めがある場合を除き、大阪地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+    <h2>12. 準拠法</h2>
+    <p>本規約および本アプリの利用には、日本法を適用します。本アプリに関連して当方とユーザーとの間に紛争が生じた場合は、法令に従い管轄権を有する裁判所において解決するものとします。</p>
   </div>
 
   <div class="policy-section">
@@ -293,7 +313,7 @@
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
       pageLanguage: 'ja',
-      includedLanguages: 'en,zh-CN,zh-TW,ko,es,pt,fr,id,vi,ru',
+      includedLanguages: 'zh-CN,zh-TW,ko,es,pt,fr,id,vi,ru',
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
       autoDisplay: false
     }, 'google_translate_element');
