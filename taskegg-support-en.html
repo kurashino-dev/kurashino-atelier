@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support | TaskEgg</title>
+  <link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/taskegg-support.html">
+  <link rel="alternate" hreflang="en" href="https://kurashino-atelier.com/taskegg-support-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/taskegg-support-en.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-note { font-size: 12px; color: var(--ink-muted); text-align: center; margin: 0 0 22px; line-height: 1.7; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 60px;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+    }
+    ul {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .translate-note {
+      font-size: 11px;
+      color: var(--ink-muted);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    #google_translate_element { text-align: center; margin-bottom: 8px; }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: rgba(250,249,246,0.3);
+    }
+    @media (max-width: 768px) {
+      nav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">Support — TaskEgg</p>
+  <h1>TaskEgg Support</h1>
+  <p class="updated">Last updated: September 10, 2026</p>
+  <nav class="lang-switch" aria-label="Language and document">
+    <a href="https://kurashino-atelier.com/taskegg-support.html" hreflang="ja" lang="ja">日本語</a>
+    <span class="sep">|</span>
+    <span class="lang-current">English</span>
+    <span class="sep">·</span>
+    <a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a>
+    <span class="sep">·</span>
+    <a href="https://kurashino-atelier.com/taskegg-terms-en.html">Terms of Service</a>
+  </nav>
+  <p class="lang-note">A Japanese version of this page is also available.</p>
+
+  <div id="google_translate_element"></div>
+  <p class="translate-note">This page is available in Japanese and English. Any other language shown below is a machine translation by Google Translate, provided only as a reading aid.</p>
+
+
+  <div class="policy-section">
+    <p>Thank you for using TaskEgg.</p>
+    <p>This page brings together information about TaskEgg and how to get in touch.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Bug reports, feedback and requests</h2>
+    <p>You can report a problem with TaskEgg, or send feedback and requests, using the dedicated form. No name or email address is required.</p>
+    <div class="card">
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOyuo_iEWvL12jaSh7Srp4Xv6Sw-XbQ-AEitP-5Ejszhhk2Q/viewform" target="_blank" rel="noopener noreferrer">Send a bug report or feedback</a></p>
+    </div>
+    <p>This form is for receiving messages only, and we do not reply to submissions individually. We read what you send and use it to improve the app. You are welcome to write in your own language.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Inquiries that need a reply</h2>
+    <p>If you need a reply — for example to check the status of a purchase, or to ask about how data is handled — please use the inquiry form.</p>
+    <div class="card">
+      <p><a href="https://forms.gle/CgxzyoQUAcjeFDoy6" target="_blank" rel="noopener noreferrer">Inquiry form</a></p>
+    </div>
+  </div>
+
+  <div class="policy-section">
+    <h2>Purchases and refunds</h2>
+    <p>TaskEgg's Premium features are a one-time purchase and do not renew automatically. There is nothing to cancel.</p>
+    <p>Purchases and refunds are handled under the terms and policies of the App Store or Google Play where you made the purchase. Please see the <a href="https://kurashino-atelier.com/taskegg-terms-en.html">Terms of Service</a> for details.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Related pages</h2>
+    <ul>
+      <li><a href="https://kurashino-atelier.com/taskegg-privacy-en.html">Privacy Policy</a></li>
+      <li><a href="https://kurashino-atelier.com/taskegg-terms-en.html">Terms of Service</a></li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <h2>Provider</h2>
+    <p>Provider: Kurashino</p>
+    <p>App: TaskEgg</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">© 2026 Kurashino. All rights reserved.</p>
+</footer>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'zh-CN,zh-TW,ko,es,pt,fr,id,vi,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
