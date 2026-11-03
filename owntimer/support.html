@@ -6,40 +6,235 @@
 <title>サポート | OwnTimer</title>
 <meta name="description" content="OwnTimerのサポートとよくある質問。">
 <link rel="alternate" hreflang="ja" href="support.html"><link rel="alternate" hreflang="en" href="support.en.html">
-<style>
-:root{--bg:#fff;--text:#2E3236;--accent:#3A7391;--accent-ink:#2a5068;--line:#dce3e8;--soft:#f3f7f9;--muted:#5d6970}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15191c;--text:#e6eaed;--accent:#7fb2cc;--accent-ink:#9cc6dc;--line:#2b343a;--soft:#1d2327;--muted:#a3adb3}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.85 system-ui,-apple-system,"Hiragino Sans","Noto Sans JP","Segoe UI",sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 72px}
-a{color:var(--accent-ink);overflow-wrap:anywhere}
-h1{font-size:26px;line-height:1.4;margin:28px 0 4px}
-h2{font-size:20px;line-height:1.5;margin:36px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
-h3{font-size:17px;margin:24px 0 4px}
-p,li{overflow-wrap:anywhere}
-ul,ol{padding-left:1.4em}
-nav{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
-nav .lang{margin-left:auto}
-.meta{color:var(--muted);font-size:14px;margin:0 0 16px}
-.card{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:16px 0}
-.badges{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
-.badge{display:inline-block;border:1px dashed var(--accent);color:var(--accent-ink);border-radius:12px;padding:10px 18px;font-size:14px}
-.hero h1{font-size:32px;margin-top:36px}
-.lead{font-size:18px;color:var(--accent-ink)}
-table{border-collapse:collapse;width:100%;font-size:15px}
-th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
-th{background:var(--soft)}
-footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topnav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: none;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 40px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-switch .lang-pair { white-space: nowrap; display: inline-flex; gap: 8px; align-items: center; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+    .hero { margin-bottom: 8px; }
+    .lead {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--green-deep);
+      line-height: 1.9;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+      overflow-wrap: anywhere;
+    }
+    strong { font-weight: 400; color: var(--ink); }
+    ul, ol {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; overflow-wrap: anywhere; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+      overflow-wrap: anywhere;
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+    .badge {
+      display: inline-block;
+      border: 1px dashed var(--accent);
+      color: var(--green-deep);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 8px 0 16px; }
+    th, td { border: 1px solid var(--cream); padding: 8px 12px; text-align: left; vertical-align: top; overflow-wrap: anywhere; word-break: break-word; }
+    th { background: #f5f2ec; font-weight: 400; color: var(--ink); }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250,249,246,0.5);
+      margin-bottom: 0;
+    }
+    .footer-copy a { color: rgba(250,249,246,0.6); border-bottom: 1px solid rgba(250,249,246,0.3); }
+    .footer-copy a:hover { color: #faf9f6; }
+    @media (max-width: 768px) {
+      .topnav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      h1 { font-size: 26px; }
+      .lang-switch { margin-bottom: 32px; }
+      .policy-section { margin-bottom: 48px; padding-bottom: 48px; }
+      .policy-section:last-child { margin-bottom: 0; padding-bottom: 0; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
 </head>
 <body>
+
+<nav class="topnav">
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
 <main>
-<nav aria-label="メニュー"><a href="https://kurashino-atelier.com/">Kurashino</a><a href="index.html">ホーム</a><a href="privacy.html">プライバシー</a><a href="terms.html">利用規約</a><a href="support.html" aria-current="page">サポート</a><a class="lang" href="support.en.html" hreflang="en" lang="en">English</a></nav>
-<h1>OwnTimer サポート</h1>
-<p class="meta">最終更新日: 2026年11月2日</p>
+  <p class="page-label">Support — OwnTimer</p>
+  <h1>OwnTimer サポート</h1>
+  <p class="updated">最終更新日: 2026年11月3日</p>
+  <nav class="lang-switch" aria-label="メニュー">
+    <a href="index.html">ホーム</a>
+    <span class="sep">·</span>
+    <a href="privacy.html">プライバシー</a>
+    <span class="sep">·</span>
+    <a href="terms.html">利用規約</a>
+    <span class="sep">·</span>
+    <span class="lang-current" aria-current="page">サポート</span>
+    <span class="lang-pair"><span class="sep">|</span>
+    <a href="support.en.html" hreflang="en" lang="en">English</a></span>
+  </nav>
+  <div class="policy-section">
 <p>OwnTimerの使い方や不具合についてのご意見は、お問い合わせフォームからお送りください。アプリの設定にある「不具合・ご意見」からも開けます。</p>
 <div class="card"><p style="margin:0"><strong>お問い合わせフォーム</strong>: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeheTnIH-umM2lZv43_UxM_USu19eUg7JVg4-VH2NAiTtesrQ/viewform">お問い合わせフォーム</a><br>運営: Kurashino　／　フォームでは返信用の連絡先をお聞きしないため、個別のご返信はできません。いただいた内容は、不具合の改善の参考にします。</p></div>
+  </div>
 
+  <div class="policy-section">
 <h2>お問い合わせの際にお知らせいただきたいこと</h2>
 <ul>
 <li>端末の機種名とOSのバージョン（例: iPhoneの機種名とiOSのバージョン）</li>
@@ -48,7 +243,9 @@ footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;font-si
 <li>購入や返金のお手続きは、購入されたストア（App Store／Google Play）で行います。注文番号などはフォームに書かないでください。</li>
 </ul>
 <p>フォームでは、お名前・メールアドレス・電話番号・住所などの個人情報はお聞きしません。録音データも添付できません。書かないでください。</p>
+  </div>
 
+  <div class="policy-section">
 <h2>よくある質問</h2>
 
 <h3>通知が届かない、音が鳴らない</h3>
@@ -77,7 +274,7 @@ footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;font-si
 <p>OwnTimerにはクラウド同期やバックアップの機能がありません。アラームや録音は端末の中にあり、端末のバックアップ機能（iCloudバックアップ、Androidのバックアップなど）の設定に従います。録音は、iOSでは書き出して保存しておくと安心です。「広告を消す」は、上記の「購入を復元」で復元できます。</p>
 
 <h3>広告について</h3>
-<p>無料でお使いの間は、アラームの一覧・通常タイマー・設定画面の末尾に、Googleの広告が表示されます。広告の内容や情報の取扱いは、<a href="privacy.html">プライバシーポリシー</a>をご覧ください。不適切な広告を見かけたときは、お知らせください。</p>
+<p>無料でお使いの間は、アラーム・通常タイマー画面のタブバーの上に、Googleの広告が表示されます（設定・みえるタイマー画面と鳴動中は表示しません）。広告の内容や情報の取扱いは、<a href="privacy.html">プライバシーポリシー</a>をご覧ください。不適切な広告を見かけたときは、お知らせください。</p>
 
 <h3>同梱のサウンドについて</h3>
 <p>「森」「海」「雨」「ウグイス」は、パブリックドメイン相当（CC0）で公開されている録音を、短く加工して同梱したものです（Freesound、OpenGameArtなどの投稿者に感謝します）。「エリーゼのために」「カノン」「きらきら星」は、パブリックドメインの旋律をOwnTimerが自分で書き起こして合成したオリジナルの音源です。アプリは、これらをインターネットから読み込みません。</p>
@@ -86,8 +283,13 @@ footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;font-si
 <p>アラーム、マイ設定、録音は、アプリ内で個別に削除できます。アプリを削除すると、端末内のデータも失われます。当方のサーバーにお客様のデータはありません。</p>
 
 <p><a href="privacy.html">プライバシーポリシー</a> / <a href="terms.html">利用規約</a></p>
-
-<footer>&copy; 2026 Kurashino &middot; OwnTimer &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSeheTnIH-umM2lZv43_UxM_USu19eUg7JVg4-VH2NAiTtesrQ/viewform">お問い合わせフォーム</a></footer>
+  </div>
 </main>
+
+<footer>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">&copy; 2026 Kurashino &middot; OwnTimer &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSeheTnIH-umM2lZv43_UxM_USu19eUg7JVg4-VH2NAiTtesrQ/viewform">お問い合わせフォーム</a></p>
+</footer>
+
 </body>
 </html>

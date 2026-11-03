@@ -6,61 +6,264 @@
 <title>Terms of Use | OwnTimer</title>
 <meta name="description" content="OwnTimer Terms of Use.">
 <link rel="alternate" hreflang="en" href="terms.en.html"><link rel="alternate" hreflang="ja" href="terms.html">
-<style>
-:root{--bg:#fff;--text:#2E3236;--accent:#3A7391;--accent-ink:#2a5068;--line:#dce3e8;--soft:#f3f7f9;--muted:#5d6970}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15191c;--text:#e6eaed;--accent:#7fb2cc;--accent-ink:#9cc6dc;--line:#2b343a;--soft:#1d2327;--muted:#a3adb3}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.85 system-ui,-apple-system,"Hiragino Sans","Noto Sans JP","Segoe UI",sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 72px}
-a{color:var(--accent-ink);overflow-wrap:anywhere}
-h1{font-size:26px;line-height:1.4;margin:28px 0 4px}
-h2{font-size:20px;line-height:1.5;margin:36px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
-h3{font-size:17px;margin:24px 0 4px}
-p,li{overflow-wrap:anywhere}
-ul,ol{padding-left:1.4em}
-nav{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
-nav .lang{margin-left:auto}
-.meta{color:var(--muted);font-size:14px;margin:0 0 16px}
-.card{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:16px 0}
-.badges{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
-.badge{display:inline-block;border:1px dashed var(--accent);color:var(--accent-ink);border-radius:12px;padding:10px 18px;font-size:14px}
-.hero h1{font-size:32px;margin-top:36px}
-.lead{font-size:18px;color:var(--accent-ink)}
-table{border-collapse:collapse;width:100%;font-size:15px}
-th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
-th{background:var(--soft)}
-footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topnav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: none;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 40px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-switch .lang-pair { white-space: nowrap; display: inline-flex; gap: 8px; align-items: center; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+    .hero { margin-bottom: 8px; }
+    .lead {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--green-deep);
+      line-height: 1.9;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+      overflow-wrap: anywhere;
+    }
+    strong { font-weight: 400; color: var(--ink); }
+    ul, ol {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; overflow-wrap: anywhere; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+      overflow-wrap: anywhere;
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+    .badge {
+      display: inline-block;
+      border: 1px dashed var(--accent);
+      color: var(--green-deep);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 8px 0 16px; }
+    th, td { border: 1px solid var(--cream); padding: 8px 12px; text-align: left; vertical-align: top; overflow-wrap: anywhere; word-break: break-word; }
+    th { background: #f5f2ec; font-weight: 400; color: var(--ink); }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250,249,246,0.5);
+      margin-bottom: 0;
+    }
+    .footer-copy a { color: rgba(250,249,246,0.6); border-bottom: 1px solid rgba(250,249,246,0.3); }
+    .footer-copy a:hover { color: #faf9f6; }
+    @media (max-width: 768px) {
+      .topnav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      h1 { font-size: 26px; }
+      .lang-switch { margin-bottom: 32px; }
+      .policy-section { margin-bottom: 48px; padding-bottom: 48px; }
+      .policy-section:last-child { margin-bottom: 0; padding-bottom: 0; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
 </head>
 <body>
-<main>
-<nav aria-label="Menu"><a href="https://kurashino-atelier.com/">Kurashino</a><a href="index.en.html">Home</a><a href="privacy.en.html">Privacy</a><a href="terms.en.html" aria-current="page">Terms</a><a href="support.en.html">Support</a><a class="lang" href="terms.html" hreflang="ja" lang="ja">日本語</a></nav>
-<h1>OwnTimer Terms of Use</h1>
-<p class="meta">Effective and last updated: November 2, 2026</p>
-<p>These Terms of Use (the "Terms") set out the conditions for using OwnTimer (the "App"), provided by Kurashino ("we", "us"). By installing or using the App you agree to these Terms. If you do not agree, please do not use the App.</p>
 
+<nav class="topnav">
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">Terms of Use — OwnTimer</p>
+  <h1>OwnTimer Terms of Use</h1>
+  <p class="updated">Effective and last updated: November 3, 2026</p>
+  <nav class="lang-switch" aria-label="Menu">
+    <a href="index.en.html">Home</a>
+    <span class="sep">·</span>
+    <a href="privacy.en.html">Privacy</a>
+    <span class="sep">·</span>
+    <span class="lang-current" aria-current="page">Terms</span>
+    <span class="sep">·</span>
+    <a href="support.en.html">Support</a>
+    <span class="lang-pair"><span class="sep">|</span>
+    <a href="terms.html" hreflang="ja" lang="ja">日本語</a></span>
+  </nav>
+  <div class="policy-section">
+<p>These Terms of Use (the "Terms") set out the conditions for using OwnTimer (the "App"), provided by Kurashino ("we", "us"). By installing or using the App you agree to these Terms. If you do not agree, please do not use the App.</p>
+  </div>
+
+  <div class="policy-section">
 <h2>1. The App</h2>
 <p>The App is a clock and timer app that provides alarms, timers and a visual timer as a rough guide to time in daily life. Notifications can use built-in sounds or recordings you make yourself.</p>
+  </div>
 
+  <div class="policy-section">
 <h2>2. License</h2>
 <p>We grant you a non-exclusive, non-transferable right to use the App for personal purposes on compatible devices that you own or control. Copyright and other rights in the App belong to us or to their rightful owners.</p>
+  </div>
 
+  <div class="policy-section">
 <h2>3. Pricing, ads and "Remove Ads"</h2>
 <ol>
-<li>The core features of the App are free. While you use the free version, banner ads are shown at the end of the alarm list, the regular timer screen and the settings screen.</li>
+<li>The core features of the App are free. While you use the free version, banner ads are shown above the tab bar on the alarm and regular timer screens (not on the settings or visual timer screens, or while ringing).</li>
 <li>"Remove Ads" is a one-time in-app purchase (non-consumable) that hides ads. It is not a subscription. It does not add or remove any other feature.</li>
 <li>The price is the amount shown by the Apple App Store or Google Play at the time of purchase (which may include tax). Payment is made through the store's payment system.</li>
 <li>Cancellation and refunds follow the terms and procedures of the store where you purchased (Apple or Google). We cannot issue refunds directly.</li>
 <li>After changing devices or reinstalling, you can restore a purchase made with the same store account from Settings &rarr; Remove Ads &rarr; See details &rarr; Restore Purchase. Purchases cannot be transferred between Apple and Google.</li>
 </ol>
+  </div>
 
+  <div class="policy-section">
 <h2>4. Recordings and user content</h2>
 <ol>
 <li>Recordings are stored on your device and are not collected by us. Rights in a recording belong to you or the relevant rights holder.</li>
 <li>If you record, export or share another person's voice or a sound someone else holds rights to, you are responsible for obtaining their consent and for respecting their privacy, publicity, copyright and other rights. We are not responsible for infringement of third-party rights or related disputes.</li>
 <li>What happens to an exported file after you pass it to another app or person is the responsibility of you and that recipient.</li>
 </ol>
+  </div>
 
+  <div class="policy-section">
 <h2>5. Prohibited acts</h2>
 <ul>
 <li>Violating laws or public order</li>
@@ -68,45 +271,66 @@ footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;font-si
 <li>Disassembling, reverse engineering, modifying or improperly redistributing the App, or interfering with the display of ads</li>
 <li>Interfering with the normal operation of the App or of its ad and payment systems</li>
 </ul>
+  </div>
 
+  <div class="policy-section">
 <h2>6. Nature of notifications; important uses</h2>
 <ol>
 <li>Notifications and sounds depend on the operating system, notification and volume settings, silent and Focus modes, battery-saving settings, the state of the device and whether the App has been closed. They may arrive late or may not sound.</li>
 <li>The App is a tool for rough time guidance in daily life. Do not rely on it as the only means for uses that require reliable alerts, such as medical care (including taking medication), safety, disaster response, emergencies, or critical deadlines in transport or work.</li>
 <li>The touch lock (key) in the visual timer only prevents accidental touches inside the App. It does not restrict the device as a whole.</li>
 </ol>
+  </div>
 
+  <div class="policy-section">
 <h2>7. Changes, interruption and discontinuation</h2>
 <p>We may change the App, or suspend or end its provision, at any time without prior notice if necessary. If discontinuation affects a purchased "Remove Ads", we will respond appropriately within applicable law and store rules.</p>
+  </div>
 
+  <div class="policy-section">
 <h2>8. Disclaimer of warranties</h2>
 <p>To the extent permitted by applicable law, we do not warrant that the App is fit for a particular purpose, is free of errors or interruptions, or works on every device and OS version. This does not apply where applicable law does not allow a disclaimer.</p>
+  </div>
 
+  <div class="policy-section">
 <h2>9. Limitation of liability</h2>
 <ol>
 <li>To the extent permitted by applicable law, we are not liable for damages arising from your use of, or inability to use, the App (including damage caused by a notification that did not arrive).</li>
 <li>The preceding paragraph does not apply where the damage is caused by our intent or gross negligence, or where liability cannot be excluded or limited under applicable law, including the Japanese Consumer Contract Act and mandatory consumer protection laws of your country.</li>
 <li>Even where we are liable, and to the extent permitted by law, our liability is limited to the amount you paid us for the App (the price of "Remove Ads").</li>
 </ol>
+  </div>
 
+  <div class="policy-section">
 <h2>10. Apple and Google</h2>
 <ol>
 <li>For the iOS version, Apple's standard <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a> also applies. If it conflicts with these Terms, Apple's standard agreement prevails on that point.</li>
 <li>These Terms are between you and us only. Apple and Google are not parties to them and are not responsible for maintenance or support of the App.</li>
 </ol>
+  </div>
 
+  <div class="policy-section">
 <h2>11. Changes to these Terms</h2>
 <p>We may change these Terms when necessary. Changed Terms take effect when posted on this page (or on the date shown). If you keep using the App after a change, you agree to the changed Terms.</p>
+  </div>
 
+  <div class="policy-section">
 <h2>12. Governing law and jurisdiction</h2>
 <!-- To confirm before publishing: the court is a placeholder. Decide based on the operator's location. -->
 <p>These Terms and the use of the App are governed by the laws of Japan. Any dispute arising between us and a user in connection with the App shall be resolved by a court having jurisdiction under applicable law.</p>
+  </div>
 
+  <div class="policy-section">
 <h2>13. Contact</h2>
 <p>Operator: Kurashino<br>Contact: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK_4xKwPGYi5aiIn4KSiXgxjEt6Ejn3kTFKGkxNIAkGXIIMQ/viewform">Contact form</a> (<a href="support.en.html">Support</a>)</p>
 <p>For how personal information is handled, see the <a href="privacy.en.html">Privacy Policy</a>.</p>
-
-<footer>&copy; 2026 Kurashino &middot; OwnTimer &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK_4xKwPGYi5aiIn4KSiXgxjEt6Ejn3kTFKGkxNIAkGXIIMQ/viewform">Contact form</a></footer>
+  </div>
 </main>
+
+<footer>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">&copy; 2026 Kurashino &middot; OwnTimer &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK_4xKwPGYi5aiIn4KSiXgxjEt6Ejn3kTFKGkxNIAkGXIIMQ/viewform">Contact form</a></p>
+</footer>
+
 </body>
 </html>
