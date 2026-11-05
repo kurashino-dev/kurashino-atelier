@@ -262,7 +262,10 @@
     .guide-invitation a:hover { text-decoration: underline; text-underline-offset: 5px; }
     .guide-invitation a:focus-visible { outline: 2px solid var(--green-deep); outline-offset: 5px; }
     .guide-invitation small { display: block; margin-top: 5px; color: var(--ink-muted); font-family: "Cormorant Garamond", serif; font-size: 15px; }
-    .store-statuses { display: flex; flex-wrap: wrap; gap: 10px; }
+    .store-statuses { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .store-badge { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 12px; }
+    .store-badge img { display: block; height: 48px; width: auto; max-width: none; }
+    .store-badge small { color: var(--ink-muted); font-family: "Noto Serif JP", serif; font-size: 11px; letter-spacing: .12em; }
     .store-status {
       min-width: 138px;
       padding: 9px 14px 10px;
@@ -422,9 +425,9 @@
               <a href="taskegg-guide.html"><span>TaskEggの使い方・活用例を見る<small lang="en">Explore the guide: mission and reward ideas for everyday life</small></span></a>
             </div>
             <div class="product-meta">
-              <div class="store-statuses" aria-label="公開予定ストア">
+              <div class="store-statuses" aria-label="ストア">
                 <div class="store-status"><strong>App Store</strong><span>公開準備中</span></div>
-                <div class="store-status"><strong>Google Play</strong><span>公開準備中</span></div>
+                <div class="store-badge"><a href="https://play.google.com/store/apps/details?id=com.kurashino.taskegg&amp;hl=ja&amp;gl=JP" target="_blank" rel="noopener noreferrer"><img src="assets/google-play-badge-ja.png" alt="Google Play で手に入れよう" width="162" height="48"></a><small>2026.11.05 公開</small></div>
               </div>
               <span class="product-links"><a href="taskegg-privacy.html">プライバシーポリシー</a><span>|</span><a href="taskegg-terms.html">利用規約</a></span>
             </div>
