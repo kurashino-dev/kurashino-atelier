@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TaskEgg | おうちの「やること」を、楽しいミッションに</title>
+<!-- seo:start -->
+<link rel="canonical" href="https://kurashino-atelier.com/taskegg.html">
+<link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/taskegg.html">
+<link rel="alternate" hreflang="en" href="https://kurashino-atelier.com/taskegg-en.html">
+<link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/taskegg-en.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kurashino">
+<meta property="og:title" content="TaskEgg | おうちの「やること」を、楽しいミッションに">
+<meta property="og:description" content="TaskEggは、毎日のやることをミッションにするアプリ。取り組むとたまごが育ち、キャラクターに出会えます。基本機能は無料・広告なし。">
+<meta property="og:url" content="https://kurashino-atelier.com/taskegg.html">
+<meta property="og:image" content="https://kurashino-atelier.com/assets/kurashino-world.webp">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<!-- seo:end -->
+<meta name="description" content="TaskEggは、毎日のやることをミッションにするアプリ。取り組むとたまごが育ち、キャラクターに出会えます。基本機能は無料・広告なし。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topnav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: none;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 40px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-switch .lang-pair { white-space: nowrap; display: inline-flex; gap: 8px; align-items: center; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+    .hero { margin-bottom: 8px; }
+    .lead {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--green-deep);
+      line-height: 1.9;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+      overflow-wrap: anywhere;
+    }
+    strong { font-weight: 400; color: var(--ink); }
+    ul, ol {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; overflow-wrap: anywhere; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+      overflow-wrap: anywhere;
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+    .badge {
+      display: inline-block;
+      border: 1px dashed var(--accent);
+      color: var(--green-deep);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 8px 0 16px; }
+    th, td { border: 1px solid var(--cream); padding: 8px 12px; text-align: left; vertical-align: top; overflow-wrap: anywhere; word-break: break-word; }
+    th { background: #f5f2ec; font-weight: 400; color: var(--ink); }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250,249,246,0.5);
+      margin-bottom: 0;
+    }
+    .footer-copy a { color: rgba(250,249,246,0.6); border-bottom: 1px solid rgba(250,249,246,0.3); }
+    .footer-copy a:hover { color: #faf9f6; }
+    @media (max-width: 768px) {
+      .topnav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      h1 { font-size: 26px; }
+      .lang-switch { margin-bottom: 32px; }
+      .policy-section { margin-bottom: 48px; padding-bottom: 48px; }
+      .policy-section:last-child { margin-bottom: 0; padding-bottom: 0; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+      .nw { white-space: nowrap; }
+    .card .small { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--cream); }
+    .card .small p, .card .small li { font-size: 12px; line-height: 1.8; margin-bottom: 4px; }
+    .card .small ul { margin: 4px 0 8px 18px; font-size: 12px; }
+    .store { border-bottom: none; display: inline-block; }
+    .badges + .policy-section { margin-top: 48px; }
+    .store img { display: block; height: 48px; width: auto; }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">TaskEgg</p>
+  <div class="hero">
+<h1>TaskEgg</h1>
+<p class="lead">おうちの「やること」を、楽しいミッションに。</p>
+</div>
+  <nav class="lang-switch" aria-label="メニュー">
+    <span class="lang-current" aria-current="page">ホーム</span>
+    <span class="sep">·</span>
+    <a href="taskegg-guide.html">使い方とアイデア</a>
+    <span class="sep">·</span>
+    <a href="taskegg-privacy.html">プライバシー</a>
+    <span class="sep">·</span>
+    <a href="taskegg-terms.html">利用規約</a>
+    <span class="sep">·</span>
+    <a href="taskegg-support.html">サポート</a>
+    <span class="lang-pair"><span class="sep">|</span>
+    <a href="taskegg-en.html" hreflang="en" lang="en">English</a></span>
+  </nav>
+<p>TaskEggは、保護者と子どもたちの声から生まれた、毎日の「やること」をミッションにするアプリです。ミッションに取り組むとたまごが育ち、キャラクターと出会えます。自分から取り組むきっかけをつくり、そばで支える人の負担も少し軽くすることを目指しています。</p>
+<ul>
+<li><strong>ミッション</strong>: 支度、歯みがき、宿題、読書など、暮らしに合ったやることを設定できます。</li>
+<li><strong>たまごとキャラクター</strong>: ミッションの達成に合わせてたまごが育ち、キャラクターが生まれます。名前をつけたり、図鑑で眺めたりできます。</li>
+<li><strong>じぶんでミッション</strong>: 自分で考えたことを書き足せます。</li>
+<li><strong>コインとごほうび</strong>: ミッションでアプリ内のコインがたまり、家庭で決めたごほうびを選べます。ごほうびとコインの機能はオフにもできます。</li>
+<li><strong>家族それぞれの部屋</strong>: 最大8つの部屋を作れます。子どもだけでなく、おとなの毎日のやることにも使えます。保護者向けの設定はPINで保護されています。</li>
+<li>11言語に対応。</li>
+</ul>
+<p>ダウンロードと基本機能は無料で、広告は表示されません。任意の買い切りPremiumでは、カレンダーの予定の追加・編集、今月のストーリーの全内容、背景の着せかえ、日にちを決めるミッションが使えます。月額・年額の自動更新はありません。アカウントの作成は不要で、入力した内容はお使いの端末の中に保存されます。</p>
+
+<div class="badges">
+<a href="https://play.google.com/store/apps/details?id=com.kurashino.taskegg&amp;hl=ja&amp;gl=JP" target="_blank" rel="noopener noreferrer" class="store"><img src="assets/google-play-badge-ja.png" alt="Google Play で手に入れよう" width="162" height="48"></a>
+<span class="badge">App Store（公開準備中）</span>
+</div>
+
+  <div class="policy-section">
+<h2>よくある質問</h2>
+<h3>無料で使えますか？</h3>
+<p>はい。ミッション、たまごの成長、キャラクター集め、図鑑、ごほうび、ちょきんなどの基本機能は無料です。</p>
+<h3>広告は表示されますか？</h3>
+<p>表示されません。</p>
+<h3>おとなも使えますか？</h3>
+<p>はい。部屋ごとにミッションを設定でき、おとなの毎日のやることにも使えます。</p>
+<h3>Premiumは定期購入ですか？</h3>
+<p>いいえ。買い切りで、自動更新はありません。一度の購入で、アプリ内のすべての部屋に利用できます。</p>
+  </div>
+
+  <div class="policy-section">
+<h2>ご案内</h2>
+<ul>
+<li><a href="taskegg-guide.html">使い方とアイデア</a></li>
+<li><a href="taskegg-support.html">サポート・お問い合わせ</a></li>
+<li><a href="taskegg-privacy.html">プライバシーポリシー</a></li>
+<li><a href="taskegg-terms.html">利用規約</a></li>
+</ul>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">&copy; 2026 Kurashino &middot; TaskEgg &middot; <a href="taskegg-support.html">サポート・お問い合わせ</a></p>
+</footer>
+
+</body>
+</html>

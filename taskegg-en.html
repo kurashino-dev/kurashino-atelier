@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TaskEgg | Turn everyday tasks into fun missions</title>
+<!-- seo:start -->
+<link rel="canonical" href="https://kurashino-atelier.com/taskegg-en.html">
+<link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/taskegg.html">
+<link rel="alternate" hreflang="en" href="https://kurashino-atelier.com/taskegg-en.html">
+<link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/taskegg-en.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kurashino">
+<meta property="og:title" content="TaskEgg | Turn everyday tasks into fun missions">
+<meta property="og:description" content="TaskEgg turns everyday tasks into missions. Complete them to grow an egg and meet characters. Core features are free, with no ads.">
+<meta property="og:url" content="https://kurashino-atelier.com/taskegg-en.html">
+<meta property="og:image" content="https://kurashino-atelier.com/assets/kurashino-world.webp">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<!-- seo:end -->
+<meta name="description" content="TaskEgg turns everyday tasks into missions. Complete them to grow an egg and meet characters. Core features are free, with no ads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topnav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: none;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 40px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-switch .lang-pair { white-space: nowrap; display: inline-flex; gap: 8px; align-items: center; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+    .hero { margin-bottom: 8px; }
+    .lead {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--green-deep);
+      line-height: 1.9;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+      overflow-wrap: anywhere;
+    }
+    strong { font-weight: 400; color: var(--ink); }
+    ul, ol {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; overflow-wrap: anywhere; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+      overflow-wrap: anywhere;
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+    .badge {
+      display: inline-block;
+      border: 1px dashed var(--accent);
+      color: var(--green-deep);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 8px 0 16px; }
+    th, td { border: 1px solid var(--cream); padding: 8px 12px; text-align: left; vertical-align: top; overflow-wrap: anywhere; word-break: break-word; }
+    th { background: #f5f2ec; font-weight: 400; color: var(--ink); }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250,249,246,0.5);
+      margin-bottom: 0;
+    }
+    .footer-copy a { color: rgba(250,249,246,0.6); border-bottom: 1px solid rgba(250,249,246,0.3); }
+    .footer-copy a:hover { color: #faf9f6; }
+    @media (max-width: 768px) {
+      .topnav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      h1 { font-size: 26px; }
+      .lang-switch { margin-bottom: 32px; }
+      .policy-section { margin-bottom: 48px; padding-bottom: 48px; }
+      .policy-section:last-child { margin-bottom: 0; padding-bottom: 0; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+      .nw { white-space: nowrap; }
+    .card .small { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--cream); }
+    .card .small p, .card .small li { font-size: 12px; line-height: 1.8; margin-bottom: 4px; }
+    .card .small ul { margin: 4px 0 8px 18px; font-size: 12px; }
+    .store { border-bottom: none; display: inline-block; }
+    .badges + .policy-section { margin-top: 48px; }
+    .store img { display: block; height: 48px; width: auto; }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="https://kurashino-atelier.com" class="nav-logo">Kurashino<span>.</span></a>
+  <a href="https://kurashino-atelier.com" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <p class="page-label">TaskEgg</p>
+  <div class="hero">
+<h1>TaskEgg</h1>
+<p class="lead">Turn everyday things to do at home into fun missions.</p>
+</div>
+  <nav class="lang-switch" aria-label="Menu">
+    <span class="lang-current" aria-current="page">Home</span>
+    <span class="sep">·</span>
+    <a href="taskegg-guide.html">Ideas &amp; tips</a>
+    <span class="sep">·</span>
+    <a href="taskegg-privacy-en.html">Privacy</a>
+    <span class="sep">·</span>
+    <a href="taskegg-terms-en.html">Terms</a>
+    <span class="sep">·</span>
+    <a href="taskegg-support-en.html">Support</a>
+    <span class="lang-pair"><span class="sep">|</span>
+    <a href="taskegg.html" hreflang="ja" lang="ja">日本語</a></span>
+  </nav>
+<p>Shaped by the voices of parents, guardians, and children, TaskEgg turns everyday tasks into missions. Eggs grow with missions and hatch into characters. It aims to encourage initiative while easing some of the burden on those who offer support.</p>
+<ul>
+<li><strong>Missions</strong>: set things to do that suit your household, such as getting ready, brushing teeth, homework and reading.</li>
+<li><strong>Eggs and characters</strong>: as missions are completed, the egg grows and a character hatches. Give characters names and browse them in the Character Book.</li>
+<li><strong>My Missions</strong>: add ideas of your own.</li>
+<li><strong>Coins and rewards</strong>: missions earn in-app coins for rewards your household chooses. Rewards and coins can also be turned off.</li>
+<li><strong>A room for each family member</strong>: create up to 8 rooms. Adults can use it for their own daily tasks too. Adult settings are protected by a PIN.</li>
+<li>Available in 11 languages.</li>
+</ul>
+<p>Downloading TaskEgg and using its core features is free, and there are no ads. An optional one-time Premium purchase adds adding and editing calendar plans, the full Story of the Month, extra backgrounds and missions with dates. There is no automatically renewing subscription. No account is needed, and what you enter is stored on your device.</p>
+
+<div class="badges">
+<p><a href="https://play.google.com/store/apps/details?id=com.kurashino.taskegg&amp;hl=en" target="_blank" rel="noopener noreferrer">TaskEgg on Google Play</a></p>
+<span class="badge">App Store (coming soon)</span>
+</div>
+
+  <div class="policy-section">
+<h2>FAQ</h2>
+<h3>Is it free?</h3>
+<p>Yes. Core features such as missions, egg growth, character collecting, the Character Book, rewards and coin savings are free.</p>
+<h3>Are there ads?</h3>
+<p>No.</p>
+<h3>Can adults use it?</h3>
+<p>Yes. Each room has its own missions, and adults can use it for their own daily tasks.</p>
+<h3>Is Premium a subscription?</h3>
+<p>No. It is a one-time purchase with no automatic renewal, and it covers all rooms in the app.</p>
+  </div>
+
+  <div class="policy-section">
+<h2>Links</h2>
+<ul>
+<li><a href="taskegg-guide.html">Ideas &amp; tips</a></li>
+<li><a href="taskegg-support-en.html">Support and contact</a></li>
+<li><a href="taskegg-privacy-en.html">Privacy Policy</a></li>
+<li><a href="taskegg-terms-en.html">Terms of Use</a></li>
+</ul>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-logo">Kurashino<span>.</span></div>
+  <p class="footer-copy">&copy; 2026 Kurashino &middot; TaskEgg &middot; <a href="taskegg-support-en.html">Support and contact</a></p>
+</footer>
+
+</body>
+</html>
