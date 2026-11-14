@@ -233,6 +233,10 @@
       line-height: 1.2;
     }
     .product-brand { width: fit-content; display: grid; justify-items: center; }
+    .product-card + .product-card { margin-top: 40px; }
+    #owntimer { scroll-margin-top: 150px; }
+    .product-card--owntimer .product-name { font-family: "Noto Sans JP", sans-serif; font-size: clamp(30px, 3.4vw, 46px); font-weight: 600; letter-spacing: 0; }
+    .product-card--owntimer .product-egg { mix-blend-mode: normal; border-radius: 24%; }
     .product-egg {
       width: 144px;
       height: 144px;
@@ -374,27 +378,27 @@
     /* ── News ── */
         #news { background: var(--warm-white); }
         #news > * { max-width: 700px; }
-    
+
         .news-header {
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
           margin-bottom: 56px;
         }
-    
+
         .news-header h2 {
           font-family: 'Noto Serif JP', serif;
           font-size: clamp(22px, 2.2vw, 32px);
           font-weight: 200;
           color: var(--ink);
         }
-    
+
         .news-list {
           display: flex;
           flex-direction: column;
           gap: 0;
         }
-    
+
         .news-item {
           display: grid;
           grid-template-columns: 140px 80px 1fr;
@@ -405,15 +409,15 @@
           cursor: pointer;
           transition: opacity 0.3s ease;
         }
-    
+
         .news-item:first-child {
           border-top: 1px solid var(--cream);
         }
-    
+
         .news-item:hover {
           opacity: 0.65;
         }
-    
+
         .news-date {
           font-family: 'Cormorant Garamond', serif;
           font-size: 14px;
@@ -421,7 +425,7 @@
           color: var(--ink-muted);
           letter-spacing: 0.05em;
         }
-    
+
         .news-category {
           font-family: 'Noto Sans JP', sans-serif;
           font-size: 10px;
@@ -430,7 +434,7 @@
           color: var(--green-mid);
           text-transform: uppercase;
         }
-    
+
         .news-title {
           font-family: 'Noto Serif JP', serif;
           font-size: 15px;
@@ -442,20 +446,21 @@
       .news-item { grid-template-columns: 1fr; gap: 8px; }
     }
   </style>
+<link rel="stylesheet" href="assets/site-header.css">
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
 
-  <nav aria-label="メインナビゲーション">
-    <a href="#home" class="nav-logo"><img class="brand-mark" src="assets/kurashino-grape-clear-lime-v25-512-transparent.png" alt="">Kurashino</a>
-    <ul class="nav-links">
+<header class="site-header site-header--home" aria-label="サイトヘッダー">
+  <a class="nav-logo" href="index.html"><img class="brand-mark" src="assets/kurashino-grape-clear-lime-v25-512-transparent.png" width="30" height="38" alt="">Kurashino</a>
+  <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#products">Work</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+</header>
 
   <main id="main">
     <section id="home">
@@ -513,6 +518,29 @@
                 <div class="store-badge"><a href="https://play.google.com/store/apps/details?id=com.kurashino.taskegg&amp;hl=ja&amp;gl=JP" target="_blank" rel="noopener noreferrer"><img src="assets/google-play-badge-ja.png" alt="Google Play で手に入れよう" width="162" height="48"></a><small>2026.11.05 公開</small></div>
               </div>
               <span class="product-links"><a href="taskegg.html">TaskEggについて</a><span>|</span><a href="taskegg-privacy.html">プライバシーポリシー</a><span>|</span><a href="taskegg-terms.html">利用規約</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card product-card--owntimer" id="owntimer">
+          <div class="product-brand">
+            <img class="product-egg" src="assets/owntimer-icon.png" width="1024" height="1024" alt="水色のタイマーに、停止と再生のボタンと笑顔を描いたOwnTimerのアイコン" loading="lazy">
+            <h2 class="product-name">OwnTimer</h2>
+            <p class="product-reading">オウンタイマー</p>
+          </div>
+          <div class="product-copy">
+            <h2>時間が見える。見通しがもてる。</h2>
+            <p>アラーム・タイマー・みえるタイマーをひとつに。グラスの水が少しずつ減って、残り時間を目で確かめられます。好きな言葉や声、音を録音して、おしまいをお知らせ。日々の支度や作業、休憩の区切りに使えます。</p>
+            <p class="english-copy" lang="en">Alarms, timers, and a visual timer in one app. Watch the water level fall as time passes, and use a recorded voice or sound to let you know when time is up. For everyday routines, work, and breaks.</p>
+            <div class="guide-invitation">
+              <p>基本機能は無料。任意の買い切りで広告を非表示にできます。</p>
+              <a href="owntimer/index.html"><span>OwnTimerについて見る<small lang="en">Explore OwnTimer: features and how to use it</small></span></a>
+            </div>
+            <div class="product-meta">
+              <div class="store-statuses" aria-label="OwnTimerの公開予定ストア">
+                <div class="store-status"><strong>App Store</strong><span>公開準備中</span></div>
+                <div class="store-status"><strong>Google Play</strong><span>公開準備中</span></div>
+              </div>
+              <span class="product-links"><a href="owntimer/privacy.html">プライバシーポリシー</a><span>|</span><a href="owntimer/terms.html">利用規約</a><span>|</span><a href="owntimer/support.html">サポート</a></span>
             </div>
           </div>
         </div>

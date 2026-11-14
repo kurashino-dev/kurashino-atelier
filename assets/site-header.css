@@ -1,0 +1,82 @@
+/* Shared by every Kurashino page. Product typography stays in each page. */
+.site-header {
+  position: relative;
+  z-index: 100;
+  inset: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  min-height: 100px;
+  margin: 0;
+  padding: 28px 60px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid rgba(196,168,130,.15);
+  background: #faf9f6;
+  color: #2c2b28;
+  line-height: 1.4;
+  backdrop-filter: none;
+}
+.site-header.site-header--home { position: fixed; top: 0; left: 0; right: 0; }
+.site-header .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #2c2b28;
+  font: 400 22px/1.4 "Cormorant Garamond", Georgia, serif;
+  letter-spacing: .12em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-header .brand-mark {
+  display: block;
+  width: 30px;
+  height: 38px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.site-header .nav-back,
+.site-header .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  color: #5c5a55;
+  font: 400 11px/1.6 "Noto Sans JP", sans-serif;
+  letter-spacing: .12em;
+  text-decoration: none;
+}
+.site-header .nav-back { text-align: right; text-transform: none; }
+.site-header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-header .nav-links a { text-transform: uppercase; }
+.site-header a:hover { color: #4a6741; }
+.site-header a:focus-visible { outline: 2px solid #4a6741; outline-offset: 4px; }
+@media (max-width: 780px) {
+  .site-header {
+    min-height: 133px;
+    padding: 20px 24px;
+    align-items: flex-start;
+    gap: 4px 16px;
+  }
+  .site-header .nav-logo { font-size: 20px; min-height: 44px; }
+  .site-header .brand-mark { width: 24px; height: 30px; }
+  .site-header .nav-back { font-size: 10px; letter-spacing: .04em; }
+  .site-header--home { flex-wrap: wrap; }
+  .site-header .nav-links { width: 100%; justify-content: space-between; gap: 4px 12px; }
+  .site-header .nav-links a { min-height: 44px; font-size: 10px; letter-spacing: .08em; }
+  .site-header--home + main #home { padding-top: 140px; }
+}
