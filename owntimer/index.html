@@ -170,7 +170,10 @@
       margin-bottom: 12px;
     }
     .card p { margin-bottom: 8px; }
-    .badges { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+    .badges { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 24px 0 8px; }
+    .store { border-bottom: none; display: inline-block; }
+    .store img { display: block; height: 48px; width: auto; }
+    .badges + .policy-section { margin-top: 48px; }
     .badge {
       display: inline-block;
       border: 1px dashed var(--accent);
@@ -260,8 +263,7 @@
 <p>基本機能は無料です。アラーム・通常タイマー・設定・サウンドの各画面、みえるタイマーの設定変更画面、録音の待機中や録音後の画面にバナー広告が表示されます（みえるタイマーの水量表示画面や、音が鳴っている間・録音中・試聴中は表示しません）。買い切りの「広告を消す」で広告を非表示にできます。アカウント登録・クラウド同期はなく、録音や設定は端末の中に保存されます。</p>
 
 <div class="badges">
-<!-- 公開後、ストアの公式バッジとURLに差し替える -->
-<span class="badge">App Store（準備中）</span>
+<a href="https://apps.apple.com/app/id6829421199" target="_blank" rel="noopener noreferrer" class="store"><img src="../assets/app-store-badge-ja.svg" alt="App Store からダウンロード" width="131" height="48"></a>
 <span class="badge">Google Play（準備中）</span>
 </div>
 
