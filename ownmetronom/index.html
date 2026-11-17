@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OwnMetronom | テンポ・音程・練習録音</title>
+<!-- seo:start -->
+<link rel="canonical" href="https://kurashino-atelier.com/ownmetronom/">
+<link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/ownmetronom/">
+<link rel="alternate" hreflang="en" href="https://kurashino-atelier.com/ownmetronom/index.en.html">
+<link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/ownmetronom/index.en.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kurashino">
+<meta property="og:title" content="OwnMetronom | テンポ・音程・練習録音">
+<meta property="og:description" content="振り子のメトロノーム、チューナー、練習録音。OwnMetronomの機能と使い方。">
+<meta property="og:url" content="https://kurashino-atelier.com/ownmetronom/">
+<meta property="og:image" content="https://kurashino-atelier.com/assets/kurashino-world.webp">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<!-- seo:end --><meta name="description" content="振り子のメトロノーム、チューナー、練習録音。OwnMetronomの機能と使い方。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #faf9f6;
+      --cream: #ede8de;
+      --green-mid: #8fa882;
+      --green-deep: #4a6741;
+      --ink: #2c2b28;
+      --ink-light: #5c5a55;
+      --ink-muted: #9a9790;
+      --accent: #b8956a;
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topnav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: none;
+    }
+    .nav-logo span { color: var(--green-mid); }
+    .nav-back {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: none;
+      transition: color 0.3s ease;
+    }
+    .nav-back:hover { color: var(--green-deep); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    .lang-switch {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px; margin: 0 0 40px; font-size: 13px; letter-spacing: 0.02em;
+    }
+    .lang-switch a { color: var(--green-deep); text-decoration: none; border-bottom: 1px solid rgba(74, 103, 65, 0.35); padding-bottom: 1px; }
+    .lang-switch a:hover { border-bottom-color: var(--green-deep); }
+    .lang-switch .lang-current { color: var(--ink); font-weight: 400; }
+    .lang-switch .sep { color: var(--ink-muted); opacity: 0.5; }
+    .lang-switch .lang-pair { white-space: nowrap; display: inline-flex; gap: 8px; align-items: center; }
+    .page-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 32px;
+      font-weight: 200;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    .updated {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+    .hero { margin-bottom: 8px; }
+    .lead {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--green-deep);
+      line-height: 1.9;
+    }
+    .policy-section {
+      margin-bottom: 64px;
+      padding-bottom: 64px;
+      border-bottom: 1px solid var(--cream);
+    }
+    .policy-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--cream);
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+      margin-bottom: 16px;
+      overflow-wrap: anywhere;
+    }
+    strong { font-weight: 400; color: var(--ink); }
+    ul, ol {
+      margin: 8px 0 16px 20px;
+      font-size: 14px;
+      color: var(--ink-light);
+      line-height: 2.0;
+    }
+    li { margin-bottom: 4px; overflow-wrap: anywhere; }
+    a {
+      color: var(--green-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-mid);
+      overflow-wrap: anywhere;
+    }
+    .card {
+      background: #f5f2ec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .card p { margin-bottom: 8px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+    .badge {
+      display: inline-block;
+      border: 1px dashed var(--accent);
+      color: var(--green-deep);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 8px 0 16px; }
+    th, td { border: 1px solid var(--cream); padding: 8px 12px; text-align: left; vertical-align: top; overflow-wrap: anywhere; word-break: break-word; }
+    th { background: #f5f2ec; font-weight: 400; color: var(--ink); }
+    footer {
+      background: #2c2b28;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: #faf9f6;
+    }
+    .footer-logo span { color: var(--green-mid); }
+    .footer-copy {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250,249,246,0.5);
+      margin-bottom: 0;
+    }
+    .footer-copy a { color: rgba(250,249,246,0.6); border-bottom: 1px solid rgba(250,249,246,0.3); }
+    .footer-copy a:hover { color: #faf9f6; }
+    @media (max-width: 768px) {
+      .topnav { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      h1 { font-size: 26px; }
+      .lang-switch { margin-bottom: 32px; }
+      .policy-section { margin-bottom: 48px; padding-bottom: 48px; }
+      .policy-section:last-child { margin-bottom: 0; padding-bottom: 0; }
+      footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+      .nw { white-space: nowrap; }
+    .card .small { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--cream); }
+    .card .small p, .card .small li { font-size: 12px; line-height: 1.8; margin-bottom: 4px; }
+    .card .small ul { margin: 4px 0 8px 18px; font-size: 12px; }
+
+.app-icon {display:block;width:120px;height:120px;border-radius:24%;margin:0 auto 24px;} .hero {text-align:center;margin-bottom:32px;} .lang-switch a,.nav-back {min-height:44px;display:inline-flex;align-items:center;} a:focus-visible {outline:2px solid var(--green-deep);outline-offset:4px;} .preparing {font-size:12px;letter-spacing:.06em;color:var(--ink-light);}
+</style><link rel="stylesheet" href="../assets/site-header.css"></head><body>
+<header class="site-header"><a class="nav-logo" href="../index.html"><img class="brand-mark" src="../assets/kurashino-grape-clear-lime-v25-512-transparent.png" width="30" height="38" alt="">Kurashino</a><a class="nav-back" href="../index.html">← ホームへ戻る</a></header>
+<main><p class="page-label">OwnMetronom</p><div class="hero"><img class="app-icon" src="../assets/ownmetronom-icon.png" width="1024" height="1024" alt="OwnMetronom"><h1>OwnMetronom</h1><p class="preparing">公開準備中</p></div><nav class="lang-switch" aria-label="ページと言語"><span aria-current="page">紹介</span> <span class="sep">·</span> <a href="privacy.html">プライバシー</a> <span class="sep">·</span> <a href="terms.html">利用規約</a> <span class="sep">·</span> <a href="support.html">サポート</a> <span class="sep">|</span> <a href="index.en.html" hreflang="en">English</a></nav><p class="lead">自分だけのメトロノームとチューナー。</p><p>背景を好きな写真や色に変えて、自分だけのメトロノームとチューナーに。おもりを動かしてテンポを合わせる、昔ながらのシンプルな使い方です。楽器の練習を録音して、あとで聴き返すこともできます。</p><section class="policy-section"><h2>テンポを、目と耳で</h2><p>昔ながらの振り子式メトロノームのように、おもりを上下させて40〜208 BPMに設定。大きなテンポの数字を押すと、＋−で1 BPMずつ調整できます。ベルは2・3・4・6拍ごと、またはオフに。</p></section><section class="policy-section"><h2>音程を確かめる</h2><p>音名と音の高い・低いを表示します。基準ピッチはA=410〜480 Hz。基準音も鳴らせます。チューナーの解析音声は端末内で処理し、保存しません。</p><p>メトロノームとチューナーは別々でも、同じ画面でも使えます。同時画面の基準ピッチは、チューナーのページで変更します。</p></section><section class="policy-section"><h2>練習を残して、聴き返す</h2><p>右下のマイクボタンで録音を始め、停止ボタンで保存。名前を付けて、録音タブのカードから再生できます。共有・書き出しは、自分で選んだときだけ行います。</p><p>iOSではアプリを背景に移すと録音を保存して停止します。Androidでは録音中の通知を表示して背景でも続けます。録音中の本体スピーカーのメトロノーム音は、録音に入らないよう消音します。イヤホンで音が出ない場合はイヤホンボタンで有効にできます。</p></section><section class="policy-section"><h2>自分の見た目に</h2><p>好きな写真を背景にしたり、背景と棒の色を選んだりして、メトロノームもチューナーも自分だけの見た目にできます。ログインは不要。設定と録音は端末内に保存します。</p></section><section class="policy-section"><h2>無料で使える範囲と買い切り</h2><p>メトロノーム・チューナーの基本機能は無料。録音は3件まで保存できます。録音を削除すると空き枠を再利用できます。</p><p>本人が選んでリワード広告の報酬を獲得するごとに、保存枠が1件増えます。この端末のアプリ内では期限なし。アプリ削除・データ消去・機種変更後の復元は保証しません。録音の再生ごとに全画面広告を出すことはありません。</p><p>任意の買い切りで広告なし・録音保存件数の制限なしに。定期購入ではありません。日本では500円、各地域の価格は購入画面に表示します。購入は同じストアアカウントで復元できます。録音には端末の空き容量が必要です。</p></section><div class="badges" aria-label="公開予定ストア"><span class="badge">App Store（公開準備中）</span><span class="badge">Google Play（公開準備中）</span></div><p><a href="support.html">使い方・よくある質問・お問い合わせ</a></p></main>
+<footer><div class="footer-logo">Kurashino<span>.</span></div><p class="footer-copy">&copy; 2026 Kurashino · OwnMetronom · <a href="support.html">お問い合わせ</a></p></footer></body></html>

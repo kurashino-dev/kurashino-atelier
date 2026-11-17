@@ -232,11 +232,11 @@
       letter-spacing: .08em;
       line-height: 1.2;
     }
-    .product-brand { width: fit-content; display: grid; justify-items: center; }
+    .product-brand { width: 100%; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
     .product-card + .product-card { margin-top: 40px; }
-    #owntimer { scroll-margin-top: 150px; }
-    .product-card--owntimer .product-name { font-family: "Noto Sans JP", sans-serif; font-size: clamp(30px, 3.4vw, 46px); font-weight: 600; letter-spacing: 0; }
-    .product-card--owntimer .product-egg { mix-blend-mode: normal; border-radius: 24%; }
+    #owntimer, #ownmetronom { scroll-margin-top: 150px; }
+    .product-card--owntimer .product-name, .product-card--ownmetronom .product-name { font-family: "Noto Sans JP", sans-serif; font-size: clamp(30px, 3.4vw, 46px); font-weight: 600; letter-spacing: 0; }
+    .product-card--owntimer .product-egg, .product-card--ownmetronom .product-egg { mix-blend-mode: normal; border-radius: 24%; }
     .product-egg {
       width: 144px;
       height: 144px;
@@ -541,6 +541,29 @@
                 <div class="store-status"><strong>Google Play</strong><span>公開準備中</span></div>
               </div>
               <span class="product-links"><a href="owntimer/privacy.html">プライバシーポリシー</a><span>|</span><a href="owntimer/terms.html">利用規約</a><span>|</span><a href="owntimer/support.html">サポート</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card product-card--ownmetronom" id="ownmetronom">
+          <div class="product-brand">
+            <img class="product-egg" src="assets/ownmetronom-icon.png" width="1024" height="1024" alt="OwnMetronomのアイコン" loading="lazy">
+            <h2 class="product-name">OwnMetronom</h2>
+            <p class="product-reading">オウンメトロノーム</p>
+          </div>
+          <div class="product-copy">
+            <h2><span style="display:inline-block">自分だけの</span><span style="display:inline-block">メトロノームと</span><span style="display:inline-block">チューナー。</span></h2>
+            <p>おもりを動かしてテンポを合わせる、昔ながらのシンプルな使い方。背景を好きな写真や色に変えて、自分だけのメトロノームとチューナーに。演奏の録音・聴き返しもできます。</p>
+            <p class="english-copy" lang="en">Move the weight to set the tempo, just like a traditional metronome. Simple, familiar controls, with your own photo or favorite colors to make the metronome and tuner yours. Record your practice and listen back, too.</p>
+            <div class="guide-invitation">
+              <p>基本機能は無料。録音は3件まで、任意の広告で保存枠を追加。買い切りで広告なし・録音保存件数の制限なしに。</p>
+              <a href="ownmetronom/index.html"><span>OwnMetronomについて見る<small lang="en">Explore OwnMetronom: features and how to use it</small></span></a>
+            </div>
+            <div class="product-meta">
+              <div class="store-statuses" aria-label="OwnMetronomの公開予定ストア">
+                <div class="store-status"><strong>App Store</strong><span>公開準備中</span></div>
+                <div class="store-status"><strong>Google Play</strong><span>公開準備中</span></div>
+              </div>
+              <span class="product-links"><a href="ownmetronom/privacy.html">プライバシーポリシー</a><span>|</span><a href="ownmetronom/terms.html">利用規約</a><span>|</span><a href="ownmetronom/support.html">サポート</a></span>
             </div>
           </div>
         </div>
