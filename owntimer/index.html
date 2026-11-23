@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OwnTimer | 残り時間がみえる、録音で知らせる</title>
+<title>OwnTimer | いつもの時間に、大好きな声を。</title>
 <!-- seo:start -->
 <link rel="canonical" href="https://kurashino-atelier.com/owntimer/">
 <link rel="alternate" hreflang="ja" href="https://kurashino-atelier.com/owntimer/">
@@ -11,14 +11,14 @@
 <link rel="alternate" hreflang="x-default" href="https://kurashino-atelier.com/owntimer/index.en.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kurashino">
-<meta property="og:title" content="OwnTimer | 残り時間がみえる、録音で知らせる">
-<meta property="og:description" content="アラーム・タイマー・みえるタイマーをひとつに。残り時間がみえる、録音で知らせる。">
+<meta property="og:title" content="OwnTimer | いつもの時間に、大好きな声を。">
+<meta property="og:description" content="お子さんや大切な人、自分の声を録音してお知らせに。朝のあいさつ、終了前の予告、仕事終わりのねぎらい。OwnTimerの声で広がる暮らしのアイデアをご紹介します。">
 <meta property="og:url" content="https://kurashino-atelier.com/owntimer/">
 <meta property="og:image" content="https://kurashino-atelier.com/assets/kurashino-world.webp">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <!-- seo:end -->
-<meta name="description" content="アラーム・タイマー・みえるタイマーをひとつに。残り時間がみえる、録音で知らせる。">
+<meta name="description" content="お子さんや大切な人、自分の声を録音してお知らせに。朝のあいさつ、終了前の予告、仕事終わりのねぎらい。OwnTimerの声で広がる暮らしのアイデアをご紹介します。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
@@ -225,6 +225,86 @@
     .card .small { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--cream); }
     .card .small p, .card .small li { font-size: 12px; line-height: 1.8; margin-bottom: 4px; }
     .card .small ul { margin: 4px 0 8px 18px; font-size: 12px; }
+
+
+    /* Shared Kurashino typography and palette; product stories before instructions. */
+    main { max-width:1120px; padding:40px 40px 80px; }
+    .lang-switch { margin-bottom:44px; }
+    .lang-switch a { min-height:44px; display:inline-flex; align-items:center; }
+    .showcase { display:grid; grid-template-columns:1.15fr 1fr; gap:56px; align-items:center; padding:18px 0 64px; }
+    .product-brand { display:flex; align-items:center; gap:12px; margin-bottom:26px; }
+    .product-brand img { width:42px; height:42px; border-radius:10px; }
+    .product-brand span { font:400 27px 'Cormorant Garamond',serif; letter-spacing:.04em; }
+    .showcase h1 { font-size:clamp(30px,3.5vw,45px); line-height:1.65; color:var(--green-deep); letter-spacing:.025em; margin:0 0 24px; font-weight:300; }
+    .showcase .intro-copy { font-size:15px; line-height:2.2; max-width:470px; }
+    .showcase .badges { justify-content:flex-start; margin:28px 0 12px; }
+    .small-print { font-size:12px; color:var(--ink-light); line-height:1.9; }
+    .voice-stage { background:#eeeae1; position:relative; min-height:480px; border-radius:140px 140px 8px 8px; display:flex; align-items:center; justify-content:center; padding:44px 20px; }
+    .phone-screen { width:186px; height:auto; display:block; border:5px solid #faf9f6; border-radius:28px; box-shadow:0 16px 35px #2c2b2815; }
+    .voice-note { position:absolute; background:#faf9f6; border:1px solid #ded8cd; padding:14px 20px; border-radius:20px 20px 20px 3px; font-family:'Noto Serif JP',serif; font-size:18px; line-height:1.7; color:var(--green-deep); margin:0; }
+    .voice-note.morning { top:32px; left:12px; }
+    .voice-note.evening { bottom:38px; right:8px; border-radius:20px 20px 3px 20px; }
+    .voice-note small { display:block; font:11px/1.8 'Noto Sans JP',sans-serif; letter-spacing:.03em; color:var(--ink-light); }
+    .section-label { font:400 12px 'Cormorant Garamond',serif; letter-spacing:.22em; text-transform:uppercase; color:var(--green-deep); margin-bottom:14px; }
+    .story-section { padding:56px 0; border-top:1px solid var(--cream); scroll-margin-top:24px; }
+    .story-section h2 { font:300 28px/1.7 'Noto Serif JP',serif; border:0; padding:0; margin:0 0 18px; color:var(--ink); }
+    .story-section h3 { font-size:16px; line-height:1.8; font-weight:400; margin:0 0 10px; }
+    .story-section p { font-size:14px; line-height:2.1; }
+    .section-intro { max-width:650px; margin-bottom:30px; }
+    .scene-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 40px; }
+    .scene { padding:26px 0; border-top:1px solid var(--cream); }
+    .scene .occasion { font-size:12px; letter-spacing:.04em; color:var(--ink-light); margin-bottom:12px; }
+    .scene blockquote { font:300 25px/1.8 'Noto Serif JP',serif; color:var(--green-deep); margin:0 0 14px; }
+    .scene p:last-child { margin:0; }
+    .voice-choice { margin:22px 0 0; background:#f0eee6; padding:24px 28px; border-left:3px solid #8fa882; }
+    .voice-choice p { margin:0; }
+    .visual-story { display:grid; grid-template-columns:.8fr 1.2fr; gap:64px; align-items:center; }
+    .water-sample { display:flex; justify-content:center; background:#edf1ee; border-radius:90px 90px 4px 4px; padding:32px; }
+    .water-sample img { width:155px; height:auto; border-radius:22px; }
+    .reminder-pair { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:26px 0 0; }
+    .reminder-pair div { border-top:1px solid #c6cfbf; padding-top:16px; }
+    .reminder-pair small { display:block; font-size:12px; color:var(--ink-light); margin-bottom:8px; }
+    .reminder-pair p { font-family:'Noto Serif JP',serif; color:var(--green-deep); font-size:19px; margin:0; }
+    .features { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin-top:36px; }
+    .features article { border-top:1px solid var(--cream); padding-top:20px; }
+    .features p { margin:0; }
+    .plans { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:28px; }
+    .plan { padding:26px 22px; background:#f0eee6; }
+    .plan .plan-number { font:400 32px/1.4 'Noto Sans JP',sans-serif; font-variant-numeric:tabular-nums; color:var(--green-deep); margin:8px 0 14px; }
+    .plan p { margin-bottom:0; }
+    .plan.highlight { background:#e5ebdf; }
+    .compact-faq details { border-bottom:1px solid var(--cream); padding:16px 0; }
+    .compact-faq summary { cursor:pointer; padding:10px 0; min-height:44px; font-size:14px; color:var(--ink); }
+    .compact-faq details p { margin:12px 0; max-width:760px; }
+    .closing { text-align:center; padding:54px 0 24px; }
+    .closing h2 { font:300 28px/1.8 'Noto Serif JP',serif; }
+    .closing .badges { margin:24px 0; }
+    .page-links { display:flex; justify-content:center; flex-wrap:wrap; gap:12px 24px; }
+    .page-links a { display:inline-flex; align-items:center; min-height:44px; color:var(--green-deep); font-size:12px; }
+    a:focus-visible,summary:focus-visible { outline:2px solid var(--green-deep); outline-offset:5px; }
+    @media(max-width:760px) {
+      main { padding:28px 24px 60px; }
+      .showcase { grid-template-columns:1fr; gap:30px; padding-top:0; }
+      .showcase h1 { font-size:32px; }
+      .voice-stage { min-height:430px; width:100%; max-width:420px; justify-self:center; }
+      .voice-stage .phone-screen { width:158px; }
+      .visual-story { grid-template-columns:1fr; gap:32px; }
+      .water-sample { display:none; }
+      .story-section { padding:38px 0; }
+      .story-section h2,.closing h2 { font-size:25px; }
+      .features { grid-template-columns:1fr; gap:22px; }
+      .plans { grid-template-columns:1fr; gap:12px; }
+      .plan { padding:22px; }
+      .plan .plan-number { font-size:32px; }
+    }
+    @media(max-width:480px) {
+      .scene-grid { grid-template-columns:1fr; }
+      .scene blockquote { font-size:23px; }
+      .lang-switch { gap:6px; margin-bottom:24px; }
+      .voice-note { font-size:17px; padding:12px 16px; }
+      .showcase .badges { justify-content:center; }
+      .voice-choice { padding:20px; }
+    }
 </style>
 <link rel="stylesheet" href="../assets/site-header.css">
 </head>
@@ -236,13 +316,10 @@
 </header>
 
 <main>
-  <p class="page-label">OwnTimer</p>
-  <div class="hero">
-<h1>OwnTimer</h1>
-<p class="lead">残り時間がみえる、録音で知らせる。</p>
-</div>
-  <nav class="lang-switch" aria-label="メニュー">
+<nav class="lang-switch" aria-label="メニュー">
     <span class="lang-current" aria-current="page">ホーム</span>
+    <span class="sep">·</span>
+    <a href="#moments">暮らしのアイデア</a>
     <span class="sep">·</span>
     <a href="privacy.html">プライバシー</a>
     <span class="sep">·</span>
@@ -252,29 +329,32 @@
     <span class="lang-pair"><span class="sep">|</span>
     <a href="index.en.html" hreflang="en" lang="en">English</a></span>
   </nav>
-<p>OwnTimerは、アラーム・タイマー・みえるタイマーをひとつにまとめたアプリです。グラスの水が少しずつ減って、残り時間を目で確かめられます。自分で録音した声や音で、おしまいをお知らせします。</p>
-<ul>
-<li><strong>みえるタイマー</strong>: 水の量で、残り時間をみる。</li>
-<li><strong>アラーム</strong>: 時刻や曜日を選んで、毎日の予定に。</li>
-<li><strong>録音とサウンド</strong>: 声や好きな音を最大10秒録音して、お知らせの音に。</li>
-<li><strong>マイ設定</strong>: よく使う時間と音を保存。</li>
-<li>5つのカラーテーマ、11言語に対応。</li>
-</ul>
-<p>基本機能は無料です。アラーム・通常タイマー・設定・サウンドの各画面、みえるタイマーの設定変更画面、録音の待機中や録音後の画面にバナー広告が表示されます（みえるタイマーの水量表示画面や、音が鳴っている間・録音中・試聴中は表示しません）。買い切りの「広告を消す」で広告を非表示にできます。アカウント登録・クラウド同期はなく、録音や設定は端末の中に保存されます。</p>
-
-<div class="badges">
+<section class="showcase" aria-label="OwnTimerの紹介">
+  <div><div class="product-brand"><img src="../assets/owntimer-icon.png" width="42" height="42" alt=""><span>OwnTimer</span></div>
+  <h1>いつもの時間に、<br>大好きな声を。</h1>
+  <p class="intro-copy">お子さんの声、大切な人の声、もちろん自分の声も。<br>「おはよう」から「おつかれさま」まで。<br>毎日のお知らせを、あなたらしいひとことに。</p>
+  <div class="badges">
 <a href="https://apps.apple.com/app/id6829421199" target="_blank" rel="noopener noreferrer" class="store"><img src="../assets/app-store-badge-ja.svg" alt="App Store からダウンロード" width="131" height="48"></a>
 <a href="https://play.google.com/store/apps/details?id=com.kurashino.hellochime&amp;hl=ja&amp;gl=JP" target="_blank" rel="noopener noreferrer" class="store"><img src="../assets/google-play-badge-ja.png" alt="Google Play で手に入れよう" width="162" height="48"></a>
-</div>
-
-  <div class="policy-section">
-<h2>ご案内</h2>
-<ul>
-<li><a href="privacy.html">プライバシーポリシー</a></li>
-<li><a href="terms.html">利用規約</a></li>
-<li><a href="support.html">サポート・お問い合わせ</a></li>
-</ul>
-  </div>
+</div><p class="small-print">基本機能は無料。アカウント登録は不要です。</p></div>
+  <div class="voice-stage"><img class="phone-screen" src="../assets/owntimer-web-visual-ja.jpg" width="442" height="960" alt="水の量で残り時間がわかるOwnTimerのみえるタイマーの実画面。"><p class="voice-note morning">「おはよう！」<small>お子さんの声で、朝のごあいさつ。</small></p><p class="voice-note evening">「お仕事、おつかれさま。」<small>大切な人の声を、お知らせに。</small></p></div>
+</section>
+<section class="story-section" id="moments"><p class="section-label">A voice for every moment</p><h2>どんな言葉で、知らせよう。</h2><p class="section-intro">同じ時間のお知らせでも、声と言葉が変わると、楽しみ方もいろいろ。こんなメッセージを録音してみませんか。</p>
+<div class="scene-grid"><article class="scene"><p class="occasion">朝のはじまりに</p><blockquote>「おはよう。<br>今日もいってらっしゃい。」</blockquote><p>お子さんの声や、大切な人の声で。いつもの朝のお知らせが、ちょっと楽しみな時間に。</p></article>
+<article class="scene"><p class="occasion">遊びから、次の予定へ</p><blockquote>「もうすぐだよ。<br>あと5分でおしまい。」</blockquote><p>いきなり終わりを知らせる前に、やさしい予告を。気持ちを切り替えるきっかけをつくります。</p></article>
+<article class="scene"><p class="occasion">出かける時間に</p><blockquote>「時間だよ。<br>忘れもの、ないかな？」</blockquote><p>朝の支度や待ち合わせの前に。自分の声で残したひとことを、未来の自分へのお知らせに。</p></article>
+<article class="scene"><p class="occasion">仕事の区切りに</p><blockquote>「お仕事、おつかれさま。<br>ひと息つこう。」</blockquote><p>集中したあとの休憩も、好きな声で。がんばった自分をねぎらう言葉を録音してみませんか。</p></article>
+<article class="scene"><p class="occasion">練習や勉強のおしまいに</p><blockquote>「今日もがんばったね。<br>おつかれさま！」</blockquote><p>「おしまい」の合図に、あたたかいひとことを。毎日の小さな積み重ねに寄り添います。</p></article>
+<article class="scene"><p class="occasion">夜、自分の時間に</p><blockquote>「今日はここまで。<br>ゆっくり休もう。」</blockquote><p>読書やストレッチの区切りにも。自分がほっとできる言葉で、一日を締めくくる時間に。</p></article></div>
+<div class="voice-choice"><h3>好きな声を、あなたの毎日に。</h3><p>家族や好きな人に録ってもらった声も、自分への応援メッセージも。声だけでなく、好きな音を録音して使うこともできます。</p></div><p class="small-print">録音メッセージのアイデアです。声や音をご自身で録音して、お知らせに設定できます。</p></section>
+<section class="story-section visual-story" id="visual"><div class="water-sample"><img src="../assets/owntimer-web-visual-ja.jpg" width="442" height="960" alt="グラスの水と残り時間を表示するみえるタイマー。" loading="lazy"></div><div><p class="section-label">See time. Hear your voice.</p><h2>残り時間が、見える。<br>次の予定に、見通しがもてる。</h2><p>グラスの水が少しずつ減る「みえるタイマー」。数字だけではつかみにくい残り時間も、水の量で確かめられます。</p><p>終わる前の「予告」と、時間になったときのお知らせに、それぞれのひとことを。目と耳から、自分に合った時間の感じ方を選べます。</p><div class="reminder-pair"><div><small>終わる前に</small><p>「もうすぐだよ」</p></div><div><small>時間になったら</small><p>「時間だよ」</p></div></div></div></section>
+<section class="story-section"><p class="section-label">Made for your everyday</p><h2>毎日の「ちょうどいい」に。</h2><div class="features"><article><h3>時刻でも、残り時間でも。</h3><p>曜日を選べるアラーム、数字で見るタイマー、水で見るみえるタイマーを、ひとつのアプリに。</p></article><article><h3>よく使う組み合わせを保存。</h3><p>いつもの時間と好きな音を「マイ設定」に。読書、練習、休憩など、その日の予定に合わせて。</p></article><article><h3>自分に合う見え方で。</h3><p>5つのカラーテーマと11言語に対応。ひとりの時間にも、家族と過ごす時間にも。</p></article></div></section>
+<section class="story-section" id="free-and-paid"><p class="section-label">Start with your own voice</p><h2>まずは、ひとこと録音してみよう。</h2><p>1.0.1以降は、1件につき最大20秒。標準サウンドも使えます。</p><div class="plans"><article class="plan"><h3>無料ではじめる</h3><p class="plan-number">5件</p><p>録音した声や音を保存。<br>標準サウンドは数えません。</p></article><article class="plan"><h3>もっと保存したいとき</h3><p class="plan-number">＋1件</p><p>任意の広告を最後まで1回見るごとに追加。削除しても追加枠は減りません。</p></article><article class="plan highlight"><h3>買い切りの「広告を消す」</h3><p class="plan-number">保存件数 無制限</p><p>広告を非表示にして、声の保存も気兼ねなく。定期購入ではありません。</p></article></div><p class="small-print">上記は1.0.1以降の仕様です。iPhone・iPadでは配信済み。Androidで1.0.1が表示されない場合は配信後に更新してください。保存件数が無制限でも、録音は1件最大20秒です。</p><p class="small-print">保存枠を増やす広告を見なくても、アラームやタイマーなどの基本機能を使えます。無料版の一部画面にはバナー広告が表示されます。</p></section>
+<section class="story-section compact-faq" id="faq"><h2>気になることは、こちらに。</h2><details><summary>今まで録音した声はどうなりますか？</summary><p>更新前の録音は削除されません。すでに5件を超えている場合は、更新時の件数まで保存枠を保護します。</p></details><details><summary>録音や購入は、機種変更しても引き継げますか？</summary><p>録音と追加の保存枠は端末内に保存され、再インストール・機種変更後の引き継ぎは保証されません。同じストアのアカウントで「購入を復元」すると、買い切りの権利を復元できます。録音ファイルが戻る機能ではありません。</p></details><details><summary>お知らせの音や操作について知りたい</summary><p>ロック中の鳴り方や音の大きさは、OSや端末の設定で異なります。短い時間で試してからお使いください。詳しくは<a href="support.html">サポート</a>をご覧ください。</p></details></section>
+<section class="closing"><h2>次のお知らせは、<br>どんな声にしよう。</h2><div class="badges">
+<a href="https://apps.apple.com/app/id6829421199" target="_blank" rel="noopener noreferrer" class="store"><img src="../assets/app-store-badge-ja.svg" alt="App Store からダウンロード" width="131" height="48"></a>
+<a href="https://play.google.com/store/apps/details?id=com.kurashino.hellochime&amp;hl=ja&amp;gl=JP" target="_blank" rel="noopener noreferrer" class="store"><img src="../assets/google-play-badge-ja.png" alt="Google Play で手に入れよう" width="162" height="48"></a>
+</div><nav class="page-links" aria-label="ご案内"><a href="support.html">サポート・お問い合わせ</a><a href="privacy.html">プライバシー</a><a href="terms.html">利用規約</a></nav></section>
 </main>
 
 <footer>
